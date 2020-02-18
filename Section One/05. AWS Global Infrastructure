@@ -1,0 +1,19 @@
+AWS Global
+ - É formado por tópicos
+	1. Region
+	2. Availability Zone
+	3. Edge Locations
+
+Exemplo:
+	Region -> São Paulo
+	Cada região da AWS fornece redundância e conectividade completas de rede. Ao contrário dos outros provedores de nuvem, que definem uma região como um único datacenter, as regiões da AWS consistem em várias zonas de disponibilidade, ou AZs (normalmente, três). Cada AZ é uma partição totalmente isolada da infraestrutura da AWS composta por datacenters discretos. Cada datacenter conta com energia, redes e conectividade redundantes e está hospedado em instalações separadas.	
+
+
+	Availability Zone -> Data Center dentro do estado de são (Deve existir no mínimo 2 availability por causa de desastres naturais).
+	Cada zona de disponibilidade pode ter vários datacenters (normalmente, três) e, na escala completa, pode conter centenas de milhares de servidores. Elas são partições totalmente isoladas da infraestrutura global da AWS. Com sua própria infraestrutura de energia, as AZs são fisicamente separadas por uma distância significativa (vários quilômetros) de todas as outras AZs, embora todas estejam a um raio de até 100 km uma da outra.
+
+
+	Edge Location -> São pequenos datacenter e são conectados com as availability zone mas próximo. Edge location também por objetivo armazenar mais informações estáticas como: Cache, CDN e Cloudfront e para informações eles fazer a consulta no datacenter mais próximo.
+
+AWS Global Infraesctute Link:
+	- https://aws.amazon.com/about-aws/global-infrastructure/ 
