@@ -1,0 +1,11 @@
+Amazon S3
+
+Nesse vídeo foi mostrado a criação de Bucket, assim como o permissionamento funciona em forma de hieráquia dentro dos buckets,
+sendo assim possível criar permissão para cada umas das pastas entre outros. Por default a criação do bucket é marcado sempre com acesso 
+privado, assim após a criação a possível realizar a configuração de acesso, asssim como o tipo de bucket e realizar encrypt dos arquivos. 
+Também é possiveis realizar outras configurações conforme anotações anteiores.
+
+
+
+
+
