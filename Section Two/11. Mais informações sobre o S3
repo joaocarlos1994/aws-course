@@ -1,0 +1,28 @@
+Amazon S3
+
+Componentes
+	Object Base 
+		-> Quando realizamos um upload para o bucket, primeiramente ele faz a leitura do arquivo e depois a escrita, isso devido ao fato da replicação dos arquivos entre as zonas de availaibity. Isso pode demorar de acordo com o tamanho de arquivo.
+		-> Key - Nome do arquivo
+		-> Value - Conteúdo do arquivo
+		-> Versioning - Versão do arquivo (Quando habilitada a parte de version)
+		-> Metadata - Um campo reservado dentro do S3 que armazena os dados (Informações do head do arquivo: TAG, Local de Upload)
+		-> ACL - Relacionado ao próprio
+
+S3 TIERS
+	Existe quatro tipo de taxas dentro do S3
+		1. S3 Standart - Forma padrão de availaibility e durability de 99.9...%. Quando subimos esse arquivo ele replica no mínimo para duas availibity zone. O jeito mais rápido e caro, por causa da disponibilidade e durabilidade.
+		2. S3 IA (Infrequently Access) - Zona para armazenamentos de arquivos com baixa frequencia de acesso. Cada a acesso ao arquivo você paga uma pequena taxa. Também é replicado para outras zonas.
+		3. S3 ONE ZONE - É mais barato que os dois anteiores e é replicados para uma única zona e paga por acesso.
+		4. GLACIER - Usado normalmente para backup, e você paga uma taxa de retriveal, e pode demorar 3 - 5 horas para obter o arquivo.
+
+Combrança no S3.
+	- Cobrado pelo stoage: Vai ser cobrado por Gigabyte
+	- Request -> Se não for o Standard você vai pagar por request (Acesso).
+	- Storage Management Price - Quando você usa paga pelo o gerenciamento do bucket. Um exemplo disso é as tag que podem ser colocadas nos arquivo.
+	- DTP (Data Transfer Price) - De Region por Region.
+		Ex.: Quando você tem um máquina EC2 (EAST) -> S3 (WEST), ao realizar essa transfêrencia de arquivos você pagar um a mais devido ao fato das máquinas estarem em Availability Zone diferentes.
+	- Transfer Aceleration (CDN)(CLOUDFRONT) - Realiza a transfêrencia dos arquivos por todos availability zone e cada usuário acessa o bucket mais próximo localizado.
+
+
+
