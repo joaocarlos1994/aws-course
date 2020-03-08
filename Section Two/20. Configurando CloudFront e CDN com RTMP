@@ -1,0 +1,11 @@
+Amazon S3
+
+Dentro do CloudFront da amazon existe dois tipos de CDN, um que usa o protocolo RTMP e outro especificamente para Web. O que usa o protocolo RTMP é especificamente para arquivos como vídeos. O Web é desiginado para live stream, arquivos estáticos como HTML, JS usando o protocolo HTTPS.
+		
+
+
+
+
+
+
+

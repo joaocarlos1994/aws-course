@@ -1,0 +1,18 @@
+Amazon S3
+
+Cross Replication Region é criado para replicação de arquivos entres os buckets. Por default o bucket standard replica para duas region,
+essa replicação tem o custo adicional de outra bucket. O funcionamento básica se da através da seleção de source bucket para um target bucket,
+nessário assim a criação de uma regra de replicação no source bucket. Após a criação da regra de replicação é necessário usar o CLI da amazon para replicar os arquivos no target bucket, isso pode ser feito atráves da seguinte command line:
+
+
+					aws s3 cp --recursive s3://SOURCE_BUCKET s3://TARGET_BUCKET
+
+
+Após a execução da seguinte linha de comando o arquivos serão todos replicados no target bucket. Outro ponto importante é com relação a deleção de arquivos onde a deleção de arquivos não é replicadas em outros bucket, sendo assim necessário a deleção por bucket.
+
+
+
+
+
+
+
