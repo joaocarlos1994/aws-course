@@ -1,6 +1,12 @@
 Amazon S3
 
 Dentro do CloudFront da amazon existe dois tipos de CDN, um que usa o protocolo RTMP e outro especificamente para Web. O que usa o protocolo RTMP é especificamente para arquivos como vídeos. O Web é desiginado para live stream, arquivos estáticos como HTML, JS usando o protocolo HTTPS.
+
+
+Create an RTMP distribution to speed up distribution of your streaming media files using Adobe Flash Media Server's RTMP protocol. An RTMP distribution allows an end user to begin playing a media file before the file has finished downloading from a CloudFront edge location. Note the following:
+
+	- To create an RTMP distribution, you must store the media files in an Amazon S3 bucket.
+	- To use CloudFront live streaming, create a web distribution.
 		
 
 
