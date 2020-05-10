@@ -1,0 +1,21 @@
+1 - What is AWS Storage Gateway?
+
+R.: It's an on-promise virtual appliance that can be used to cache S3 locally at a customers site.
+
+                            ---------------------------------------------------------------------------------
+
+2 - One fo your users is trying to upload a 7.5GB file to S3 however they keep getting the following error message. "Your proposed upload exceeds the maximium allowed objcet size." What is possibile solution for this?
+
+R.: Desgin you application to use multi-part upload API for all objects. (Ex.: Uma bucket suporta o upload máximo de 5 Terabyte e p upload mínimo de 1 Byte)
+
+                            ---------------------------------------------------------------------------------
+
+3 - What is Amazon Glacier?
+
+R.: An AWS Service designed for long term data archival. (Glacier é um serviço usado para armazenado de backup, tendo o um preço bem inferior aos outros serviços disponibilizados pela Amazon. Dado o fato de ser barato e usado como sistema de backup ele tem uma desvantagem, no caso o alto tempo para realizar retriever dos objetos).
+
+
+
+
+
+

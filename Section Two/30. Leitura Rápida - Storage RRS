@@ -1,0 +1,18 @@
+Amazon S3 Reduced Redundancy Storage (RRS)
+
+O que é Reduced Redundancy Storage (RRS)?
+
+O Reduced Redundancy Storage (RRS) é uma opção de armazenamento do Amazon S3 que permite aos clientes armazenar dados reproduzíveis e que não sejam de fundamental importância com níveis de redundância mais baixos do que o armazenamento padrão do Amazon S3. Ele disponibiliza uma solução altamente disponível para distribuir ou compartilhar conteúdo armazenado de forma durável em outro lugar ou para o armazenamento de miniaturas, mídia transcodificada ou outros dados processados que podem ser facilmente reproduzidos. A opção RRS armazena objetos em vários dispositivos em diversas instalações, oferecendo durabilidade 400 vezes maior que a de uma unidade comum de disco, mas não replica objetos tantas vezes quanto o armazenamento padrão do Amazon S3.
+
+O armazenamento de redundância reduzida é:
+
+Disponibilidade amparada pelo Acordo de Nível de Serviço do Amazon S3
+
+Projetado para fornecer 99,99% de durabilidade e 99,99% de disponibilidade de objetos em um determinado ano. Esse nível de durabilidade corresponde a uma perda anual esperada média de 0,01% de objetos.
+
+Projetado para sustentar a perda de dados em uma única instalação.
+
+
+
+
+

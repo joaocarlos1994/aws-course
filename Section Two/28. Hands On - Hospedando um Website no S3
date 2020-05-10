@@ -1,0 +1,6 @@
+Hospedando um Website no S3
+
+Esse serviço da Amazon Web Services tem como objetivo disponibilizar o armazenamento de arquivos estáticos para um website.
+
+Para realizar a criação e disponibilização desse serviço é necessário crianção de um Bucket S3 e ativar a propriedade do "Static Website Hosting", lembrando nesse caso em específico que não é necessário um servidor.
+

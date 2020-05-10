@@ -1,0 +1,8 @@
+Transfer Acceleration
+
+O Transfer Acceleration da Amazon Web Services é um serviço de upload de alta desepenho, onde é o CDN (Content Delivery Network) de maneira inversa, ou seja, é necessário habilitar essa opção.
+
+Após o upload desse arquivo para um edge location o CDN é encarregado de realizar a transferência desses mesmos arquivos para outras edge locations via rede interna da amazon com alta velocidade.
+
+Um ponto importante a ser colocado nesse video é o custo adicional colocado na habilitação de recurso, deve ser análisado os preços de acordo com availability zone.
+

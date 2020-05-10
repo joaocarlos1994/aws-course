@@ -1,0 +1,10 @@
+Amazon S3 Reduced Redundancy Storage (RRS)
+
+A Amazon RRS é um serviço de armazenamento dentro de uma bucket S3 da amazon. Esse serviço tem algumas diferenças associadas com as demais opções tipos de bucket disponível, ou seja, ele garante durability de 99.9% e availability 99.9%, diferente da opção Standard que garante 99.99999999% e availability 99.99999999%.
+
+Nesse exemplo em específico a Netflix e Amazon Prime usa o bucket do tipo RRS para armazenas os thumbnail de católogo de filmes, onde não é necessário a alta disponibilidade dos arquivos.
+
+
+
+
+
