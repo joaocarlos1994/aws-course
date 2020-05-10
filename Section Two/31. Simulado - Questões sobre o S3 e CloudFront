@@ -14,6 +14,57 @@ R.: Desgin you application to use multi-part upload API for all objects. (Ex.: U
 
 R.: An AWS Service designed for long term data archival. (Glacier é um serviço usado para armazenado de backup, tendo o um preço bem inferior aos outros serviços disponibilizados pela Amazon. Dado o fato de ser barato e usado como sistema de backup ele tem uma desvantagem, no caso o alto tempo para realizar retriever dos objetos).
 
+                            ---------------------------------------------------------------------------------
+
+4 - What does S3 stand for?
+
+R.: Simple Store Service
+
+                            ---------------------------------------------------------------------------------
+
+5 - You are solutions archiect who works with a large digital media company. The company has decided that they want to operate within the Japanese region and they need a bucket called "testbucket" set up immediately to test their web application on. You log in to the AWS console and try to create this bucket in the Japanese region however you are told that the bucket name is already taken. What should you do to resolve this?
+
+R.: Bucketnames are global, not regional. This a popular bucket name and is already taken. You should choose another bucket name.
+Ex.: Bucket tem nomes global, não é possível criar bucket com nomes repetitivos por causa do DNS.
+
+                            ---------------------------------------------------------------------------------
+
+6 - What is the availability on RRS (Reduced Redundancy Storage)?
+
+R.: 99.99%
+
+                            ---------------------------------------------------------------------------------
+
+7 - What is the durability on S3?
+
+R.: 99.999999999%
+
+P.S: S3 Infrequently Access has the same durability.
+
+                            ---------------------------------------------------------------------------------
+
+8 - What is the availability on S3?
+
+R.: 99.99%
+
+                            ---------------------------------------------------------------------------------
+
+9 - You need to use an Object based storage solution to store your critical non replaceble data in a cost effective way. This data will be frequently updated and will need some form of version control enabled in it. Which S3 storage solution should you use?
+
+R.: S3 is the best solution because it provide the best solution to store data with version.
+S3 - IA (Infrequently Access) is not possible because the time to upload and download data.
+
+                            ---------------------------------------------------------------------------------
+
+10 - What does RRS stand for when talking about S3?
+
+R.: Reduced Redundancy Storage
+
+                            ---------------------------------------------------------------------------------
+
+11 - What is the minimum file size that I can store on S3?
+
+R.: The minimum is 1 Byte and the Maximium is 5 Terabyte
 
 
 
