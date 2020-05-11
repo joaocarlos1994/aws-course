@@ -1,1 +1,30 @@
-Introdução ao mundo EC2
+Amazon EC2
+
+Amazon EC2 (Elastic Compute Cloud)
+
+Existem três tipos de planos relacionados ao EC2, sendo eles:
+
+	- ON Demand: Esse plano correponde a criação de máquinas virtual de acordo com a necessidade, onde você paga por seconds, podendo assim incrementar, memória, CPU, tipo de disco de armazenamento (HD ou SSD) e assim por diante.
+
+	- Reserved Instance: Esse plano possibilita é caracterizando pela cobrança por contrato, ele disponibiliza os mesmos itens anteriores mencionados, assim como possíveis configurações customizadas, de acordo com a necessidade. Uma vantagem de usar esse plano é a possibilidade de chegar a 75% com relação ao plano ON DEMAND.
+
+	- Dedicated Hosts: Esse plano em específico disponibiliza um servidor físico, ou seja, você pode reutilizar licensas de softwares corporativos nessas máquinas. Nesse plano em específico é possível realizar dois tipos de pagamentos, ON DEMAND, ou, Reserved Instance, onde no último caso é possível também chegar a uma econômia de 75%.
+
+	- Spot Instances: Esse plano em específico é relacionado a uma oferta que é feita para máquina IDLE (Máquina Ociosas), ou seja, você faz a oferta para o uso dessa máquina, quando a AWS tiver essa máquina em espécifico sera disponibilizada para sua utilização.
+
+
+Existe diferenças entre as máquinas disponibilizadas pela Amazon, essa diferença pode caracterizadas através das seguintes letras iniciais:
+
+C - Compute Otimiz
+G - Graphics
+D - Dense Storage: Tem um storage muito maior, feito whi
+R - Memory Opt: Máquina 
+M - General
+I - High Speed Storage: MYSql, SQL Server
+F - Máquina para programadores
+T - Webservices
+P - GPU - Usado para mineração de dados
+x - Memory - Usado para servidores APACHE
+
+
+
