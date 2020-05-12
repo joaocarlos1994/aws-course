@@ -10,21 +10,66 @@ Existem três tipos de planos relacionados ao EC2, sendo eles:
 
 	- Dedicated Hosts: Esse plano em específico disponibiliza um servidor físico, ou seja, você pode reutilizar licensas de softwares corporativos nessas máquinas. Nesse plano em específico é possível realizar dois tipos de pagamentos, ON DEMAND, ou, Reserved Instance, onde no último caso é possível também chegar a uma econômia de 75%.
 
-	- Spot Instances: Esse plano em específico é relacionado a uma oferta que é feita para máquina IDLE (Máquina Ociosas), ou seja, você faz a oferta para o uso dessa máquina, quando a AWS tiver essa máquina em espécifico sera disponibilizada para sua utilização.
+	- Spot Instances: Esse plano em específico é relacionado a uma oferta que é feita para máquina IDLE (Máquina Ociosas), ou seja, você faz a oferta para o uso dessa máquina, quando a AWS tiver essa máquina em espécifico sera disponibilizada para sua utilização. As instâncias spot do Amazon EC2 permitem solicitar capacidade computacional extra do Amazon EC2 com desconto de até 90% em relação ao preço das instâncias sob demanda.
 
 
 Existe diferenças entre as máquinas disponibilizadas pela Amazon, essa diferença pode caracterizadas através das seguintes letras iniciais:
 
-C - Compute Otimiz
-G - Graphics
-D - Dense Storage: Tem um storage muito maior, feito whi
-R - Memory Opt: Máquina 
-M - General
-I - High Speed Storage: MYSql, SQL Server
-F - Máquina para programadores
-T - Webservices
-P - GPU - Usado para mineração de dados
+C - Compute Optimized (Máquinas com mais CPUs que memória)
+D - Dense Storage (Tem um storage muito maior, feito Wharehouse)
+P - GPU (Máquinas usadas para mineração de dados e Machine Learning)
+I - High Speed Storage: (Máquina usadas para banco de dados, como: MYSql, SQL Server)
+G - Graphics (Possuí uma placa de vídeo e processamento de vídeo melhor)
+F - Máquina para programação
+R - Memory Optimized: (Máquinas com mais memória que CPUs) 
 x - Memory - Usado para servidores APACHE
+T - Webservices (Máquina com um baixo custo para disponibilização de webservices)
+M - General (Servidores Normais - Balanciamento entre memória e CPUs)
+
+
+Abaixo existe os detalhes associadas a essas instâncias e sua aplicações em cenários reais:
+
+
+C - Compute Optimized (Máquinas com mais CPUs que memória)
+
+As instâncias otimizadas para computação são ideais para aplicativos vinculados a computação que se beneficiam de processadores de alto desempenho. As instâncias pertencentes a essa família são adequadas para cargas de trabalho de processamento em lote, transcodificação de mídia, servidores da Web de alto desempenho, computação de alto desempenho (HPC), modelagem científica, servidores de jogos dedicados e mecanismos de servidor de anúncios, inferência de machine learning e outros aplicativos de uso intensivo de computação.
+
+							---------------------------------------------------
+
+D - Dense Storage (Tem um storage muito maior, feito Wharehouse)
+
+Esta família de instâncias oferece armazenamento de instâncias baseado em SSD Non-Volatile Memory Express (NVMe), otimizado para baixa latência, altíssima performance de E/S aleatória, alta taxa de transferência de leitura sequencial e alta IOPS a um baixo custo. A I3 também oferece instâncias sem sistema operacional (i3.metal), habilitadas pelo Nitro System, para cargas de trabalho não virtualizadas, que se beneficiam com o acesso a recursos físicos ou que podem apresentar restrições de licenciamento.
+
+
+							---------------------------------------------------
+
+P - GPU (Máquinas usadas para mineração de dados e Machine Learning)
+I - High Speed Storage: (Máquina usadas para banco de dados, como: MYSql, SQL Server)
+G - Graphics (Possuí uma placa de vídeo e processamento de vídeo melhor)
+F - Máquina para programação
+
+Instâncias P, I G e F de computação aceleradas usam aceleradores de hardware, ou coprocessadores, para executar funções, como cálculos de número de ponto flutuante, processamento de gráficos ou correspondência de padrões de dados, mais eficientemente do que é possível no software em execução nas CPUs.
+
+							---------------------------------------------------
+
+R - Memory Optimized: (Máquinas com mais memória que CPUs) 
+x - Memory - Usado para servidores APACHE
+
+As instâncias R e X são otimizadas de memória são projetadas para fornecer desempenho rápido para cargas de trabalho que processam grandes conjuntos de dados na memória.
+
+
+							---------------------------------------------------
+
+T - Webservices (Máquina com um baixo custo para disponibilização de webservices)
+M - General (Servidores Normais - Balanciamento entre memória e CPUs)
+
+Instâncias T e M de uso geral fornecem um equilíbrio de recursos de computação, memória e rede e podem ser usadas para diversas cargas de trabalho. Essas instâncias são ideais para aplicativos que usam esses recursos em proporções iguais, como servidores da Web e repositórios de código. 
+
+
+Para maiores informações seguir o seguinte link:
+
+https://aws.amazon.com/pt/ec2/instance-types/
+https://aws.amazon.com/pt/ec2/pricing/on-demand/
 
 
 
