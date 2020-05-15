@@ -1,0 +1,24 @@
+Amazon EC2
+
+Entendo e Aplicando Security Groups
+
+Os Security Group da Amazon Web Services é uma espécie de firewall, onde eles bloqueiam tudo, ou seja, por padrão é all deny e quando adicionamos um grupo nesse grupo passa a ter dois grupos, por exemplo:
+
+	- 1° ALL DENY
+	- 2° HTTPS -> ALL DENY
+
+No passo um é tudo All Deny, no passo dois adicionamos o grupo a https ao security grupo, totalizando um total de dois grupos.
+
+Uma informação muito importante é que existe SEMPRE um security grupo default por região, esse security grupo default é do console da AWS acessando as instances EC2 criadas.
+
+Os Security Group da AWS são statefull, ou seja, se você criar uma regra de inbound para http, https e na saída não houver os mesmos groups, o servidor vai devolver uma resposta, para bloquear o fluxo total é necessário bloquear o fluxo inbound.
+
+Uma outra possibilidade dentro da AWS é a possibilidade de criação de um mais security group, podendo assim adiciar várias opções de inbound e aplicar elas as instances EC2.
+
+
+
+ 
+
+
+
+
