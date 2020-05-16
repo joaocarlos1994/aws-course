@@ -1,0 +1,20 @@
+Amazon EC2
+
+Imagrando Instâncias EC2 entre regiões
+
+Para inicilizar a migração de instâncias EC2 de uma availability zone para outra é necessário primeiramente criar uma snapshot da instância desejada, no caso será necessário criar um snapshot do volume do volume onde encontra-se o sistema operacional. 
+
+Após a criação do snapshot é necessário realizar a cópia dessa snapshot para uma determinada availability zone em que deseja transferir a máquina EC2. Após a cópia do snapshot é necessário a criação de uma AMI (Amazon Machine Imagens), assim seguir os passos normais para criar uma máquina EC2 atráves de uma imagem customizada.
+
+A Amazon Web Services fornece um serviço de marketplace onde pessoas podem criar e customizar imagens para os mais serviços específicos, por exemplo, existe imagens cisco, wordpress e assim por diante.
+
+
+
+
+
+
+ 
+
+
+
+

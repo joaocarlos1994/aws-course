@@ -1,0 +1,26 @@
+Amazon EC2
+
+Configurando volumes EBS
+
+
+No momento da criança da instância EC2 você pode difinir a quantidade e o tamanho dos volumens criados para máquina EC2. Os volumes criados são por região, onde um volume criado da regiãod de São Paulo não está disponível na Oregon.
+
+Um pontro importante para prestar atenção é no momento da crição do volume EBS é a opção de deleção do disco após o desligamento da máquina, ou seja, deve ser desmarcado essa opção "Deleting on Termination", por default o disco root vem marcado essa opção.
+
+Depois que criado a instância EC2 e ativados os volumes EBS é possível realizar upgrade dos tamanhos dos volumes criados, não é necessário realizar o desligamento ou reinicar máquina para ativar esses volumes. Também existe a possibilidade da mudança do volume EBS, ou seja,
+modemos modificar o disco de Magnético para um disco virtual SSD, assim selecionar o tamanho desejado, como a taxa a velocidade do disco criado (IOPS).
+
+
+A Amazon Web Services disponibiliza uma opção interessante de criação de snapshot de um disco específico, podendo assim manter o estado virtual do disco dado um determiando momento. Através desse snapshot é possível criar um novo volune, e assim realizar a transferência desse volume para outra availability zone, também como é possível criar uma imagem e através dessa imagem criar uma instância EC2 em outras availability zone.
+
+
+
+
+
+
+
+ 
+
+
+
+

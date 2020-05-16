@@ -1,0 +1,23 @@
+Amazon EC2
+
+AWS Cli
+
+Essa aula teve por objetivo realizar a criação de uma Bucket S3 Amazon através de uma instance EC2, que por definição é um processo mais seguro, prático e confiável. Para realizar esse procedimento foi usado o AWS CLI, onde definimos e criação o usuário sistemicos para criação do usuário.
+
+Por definição algumas imagem já vem com AWS CLI configurando, onde, necessarimente é necessário realizar a configuração do ACCESS KEY e SECRECT KEY, após essa configuração.
+
+Para realizar a criação de um bucket S3 via CLI amazon é necessário executar a seguinte linha de código:
+
+
+	<code>aws s3 mb s3://BUCKET_NAME</code>
+
+
+
+
+
+
+ 
+
+
+
+

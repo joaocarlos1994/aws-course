@@ -1,0 +1,28 @@
+Amazon EC2
+
+CloudWatch e CloudTrail
+
+	- CloudWatch - É um serviço disponiblizado pela AWS para análise de performace da máquina, por exemplo:
+		- Análise de desenpenho computacional;
+			- Monitoramento de CPU
+			- Monitoramento de Disco
+			- Monitoramente de nerworks
+		- Autoscaling
+		- Elastic LoadBalances, para realização de balenciamento de carga entre os servidores;
+		- Route 53;
+		- CloudFront (CDN);
+
+	- CloudTrail é como se fosse um sistema de camereas (SYSLOG), no caso ele vai monitorar o que os usuários fazem, por exemplo:
+		- Consegue monitorar usuários;
+		- Consegue por exemplo monitorar qual usuário criou uma Bucket;
+		- Consegue monitorar qual comandos foram utilizados com quais comandos foram utilizados na CLI;
+		- Monitoração de API entre a cloud e uma aplicação;
+
+
+
+
+ 
+
+
+
+

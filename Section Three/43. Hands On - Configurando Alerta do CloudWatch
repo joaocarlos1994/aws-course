@@ -1,0 +1,17 @@
+Amazon EC2
+
+Configurando alerta no CloudWatch
+
+A Amazon disponibiliza um serviço de monitoração computacional de seus serviços através de CloudWatch, nesse serviço podemos configurar alertas de uso cpu, disco, network e demais tipos de monitoriação, porém para ativar essa monitoração é necessário um custo adicionar.
+
+Podemos relizar um sistema de notificação através de e-mail colando assim regras em específico.
+
+
+
+
+
+ 
+
+
+
+
