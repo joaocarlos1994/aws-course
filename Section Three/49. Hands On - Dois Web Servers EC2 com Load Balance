@@ -1,0 +1,26 @@
+Amazon EC2
+
+Load Balancers AWS
+
+
+É muito intuivo e fácil de criar um Load Balance na AWS, o ideal e aconselhado na criação de é que ele distribua a distribuição das requisição para edge locais e availaibity zones diferentes, porque em caso de indisponibilidade de uma edge location o sistema não fica fora do ar.
+
+Durante a criação de um loadbalance é necessário prestar atenação na configuração de heathcheck das instâncias associadas ao loadbalance, normalmente apontas para um arquivo in blank, ou, um página para ver a disponibilidade da instância EC2. Segue a descrição de configuração de heathcheck:
+
+	1. Timeout: Podemos configurar o timeout da resposta da instância EC2, possibilitando assim uma parametrização para resposta de 	   servidores.
+
+	2. Interval: Intervalo de tempo para o LoadBalance consultar a instância EC2.
+
+	3.Unhealthy threshold: Números de requisições com falha para a instância EC2 para considerar a instância fora do ar.
+
+	4.Healthy threshold: Números de requisições com sucesso para a instância EC2 para considerar a instância fora do ar.
+
+
+
+
+
+ 
+
+
+
+

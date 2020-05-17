@@ -1,0 +1,37 @@
+Amazon EC2
+
+Boostrap
+
+O Boostrap é um funcionalidade usada para disponibilziar a inicilização de serviços dentro de uma instancia EC2 no momento do seu start.
+
+Por exemplo suponhamos que no momento da criação de um instâncias EC2 você deseja instalar um servidor apache nessa instância, como ativar
+ativar o mesmo. Também podemos rodar comando de criação de Bucket e upload de arquivos no scritp.
+
+No exemplo abaixo será temos um script de update do linux, instação do apache, inicialização do apache, criação de um bucket e o upload de um arquivo no bucket criada.
+
+		#!/bin/bash 							-> Isso identifica que script Boostrap
+		yum update -y							-> Realizando atualização do Linux, "-Y" é necessário para 											   confirmar a atualização
+		yum install httpd -y						-> Realizando a instalação do servidor Apache
+		service httpd start						-> Realizando o start do serviço Apache
+		chkconfig httpd on						-> Modificando o linux para sempre iniciar o servidor Apache
+		cd /var/www/html						-> Realizando a movimentação para o diretório descrito
+		echo "<html><h1>Site Funcionando</h1></html>" > index.html	-> Criando um arquivo .html no diretório
+		aws s3 mb s3://suabucket 					-> Criando uma bucket no S3 através da ROLE associada a 										   instância EC2
+		aws s3 cp index.html s3://suabucket				-> Realizando o upload do arquivo criado para bucket S3
+
+
+Depois que criado o seu script ele deve ser adicionado na parte de "Advanced Details", mas específicamente no "User Data", após a realização o termino da configuração da instância EC2 é necessário apenas realizar o lunch da instância.
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+

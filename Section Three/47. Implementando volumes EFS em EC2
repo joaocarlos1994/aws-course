@@ -1,0 +1,40 @@
+Amazon EC2
+
+Volumes EFS em EC2
+
+EFS siginifica Elastic File System. Volumes EFS são volumes compartilhados entre máquinas EC2 dentro da Amazon Web Services, porque o sistema de volume EBS normamente criado por default e os adicionados na configuração de uma máquina EC2 não são compartilhados com outras instânicas EC2, para resolver esse problema a AWS criou o EFS.
+
+O EFS (Elastic File System) é o volume criado atráves do serviço de storage da AWS e você paga somente pelo espaço utilizado desse volume, ou seja, não é necessário reservar um espaço inicial para se trabalhar com esse volume. Um outro ponto importante a ser mencionado é que as instâncias EC2 que desejam utilizar o mesmo volume precisam adicionar o security group default da amazon, para uma conseguir reconhecer a outra dentro a rede.
+
+Nesse estudo de caso simples vamos realizar o compartilhamento de um diretório compartilhado entre duas instânicas EC2, por exemplo "/var/www/html". Para realizar o uso do EFS é necessário instalar a bibleoteca amazon-efs-utils da própria para realizar a montagem do volume EF2. Abaixo tem a descriação de script bootstrap para realizar a criação de instâncias EC2 pronta para o uso de EFS:
+
+
+								#!/bin/bash
+								yum update -y
+								yum install httpd -y
+								service httpd start
+								chkconfig httpd on
+								yum install -y amazon-efs-utils
+
+
+
+Após o termino do configuração e lançamento da instância EC2 é necessário executar o seguinte linha de código para fazer a montagem de volume, por exemplo a linha abaixo:
+
+							sudo mount -t efs -o tls fs-a2f0da08:/ /var/www/html
+
+
+Deve-se tomar cuidado ao realizar a execução desse comando devido ao fato que ele apaga todos os arquivos no diretório compartilhado, nesse caso todos os arquivos dentro da pasta "/var/www/html" serão apagados. Após a montagem do volume nas duas instâncias desejadas os arquivos agora são compartihados, ou seja, todo arquivo que for criado na instância um será replicado para instância dois, ou vice-versa.
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
