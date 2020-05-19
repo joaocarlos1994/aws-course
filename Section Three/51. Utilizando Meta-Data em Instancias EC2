@@ -1,0 +1,46 @@
+Amazon EC2
+
+Metada
+
+A Amazon disponibiliza uma funcionalidade útil através da instância EC2 para obter informações como:
+
+	- ami-id
+	- ami-launch-index
+	- ami-manifest-path
+	- block-device-mapping/
+	- events/
+	- hibernation/
+	- hostname
+	- iam/
+	- identity-credentials/
+	- instance-action
+	- instance-id
+	- instance-type
+	- local-hostname
+	- local-ipv4
+	- mac
+	- metrics/
+	- network/
+	- placement/
+	- profile
+	- public-hostname
+	- public-ipv4
+	- public-keys/
+	- reservation-id
+	- security-groups
+
+
+Todas essas informações estão disponível através do console AWS, porém as vezes faz-se necessário a utilização dessas informações atraveś de uma instância EC2. Para obter essas informações através do EC2 da Amazon é necessário utilizar realizar uma chamada no seguinte endereçamento de ip:
+
+	curl -> curl http://169.254.169.254/latest/meta-data/
+
+Após chamada desse ip o retorno será um cojunto de informações que você pode requisitar através do endereço de ip mencionado. Por exemplo podemos requisitar o DNS privado da instância EC2 através do seguinte comando:
+
+	curl http://169.254.169.254/latest/meta-data/hostname
+
+
+ 
+
+
+
+

@@ -1,0 +1,12 @@
+Amazon EC2
+
+AutoScaling para EC2
+
+
+Nesse laboratório foi abordado a parte prática do autoscaling nas máquinas anteriormente configuradas. Um ponto importante a ser mencionando durante a configuranção do autoscaling é levar em consideração média entre todas as máquinad disponível dentro da configuração de grupos.
+
+Por exemplo se uma das instâncias EC2 tiver o uso máximo de CPU de 100% e outra instância tiver o uso máximo próximo a 0% e você tiver definido uma regra de autoscaling de uma instância EC2 somente acima de 80%, significa que o autoscaling não vai funcionar, porque é necessário que as duas instâncias EC2 estejam com seu limite de acima de 80%. A regra de increase e decrease é baseado na média de instâncias EC2 ativas.
+
+
+
+
