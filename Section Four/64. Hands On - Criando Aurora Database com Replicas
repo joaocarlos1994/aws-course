@@ -1,0 +1,17 @@
+AWS Database
+
+Criando Aurora Database com Replicas
+
+Como mencionado no arquivo do capítulo anterior a Amazon Aurora Database tem a opção de criação de um datababse com writer e disponibiliza no máximo 15 replica de database apenas para leitura, diminuindo assim a latência.
+
+Para criação de um databse Amazon Aurora Database é necessário definir o nome da instância do banco de dados, assim como seguintes configuração de nome do banco de demais paramêtros, após a criação do banco de dados é disponibilizado é possibilidade de criação de um novo banco de dados no modo leitura, ou ideal é realizar a em outra availaibility zone por causa do failover.
+
+O Failover é um das funcionalidade do Aurora Database onde em caso de indisponibilidade do databse de escrita a próxima instância marcada como reader assumira com instância principal de escrita.
+
+
+
+ 
+
+
+
+

@@ -1,0 +1,17 @@
+AWS Database
+
+Amazon Aurora
+
+Esse é banco de dados de propriedade da Amazon e foi criada em 2014, o Aurora database é totalmente compatível com MySQL. Algumas das vantagens da utilizam da Aurora é sua capacidade processamento onde chega a ser 10x mais rápida que bancos convêncionais e 5x mais bartato a sua utilização.
+
+A versão default da criação de banco de dados Aurora começa com 10GB de capacidade de armazenamento e tem o autoscaling automático de 64GB em 64GB, até atingir a capacidade máxima 64TB em um único banco de dados. Outro ponto importante com relação ao Aurora databse é a possibilidade de criar uma database main exclusivamente para escrita de dados, e outras podendo chegar no máximo de 15 replicas para realizar somente a leitura, diminuindo assim muito a latência.
+
+O Amazon Aurora também disponibiliza o sistema de recovery point in-time e o backup é contínuo e armazenado em três availability zone.
+
+
+
+ 
+
+
+
+

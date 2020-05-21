@@ -1,0 +1,33 @@
+AWS Database
+
+Redshift
+
+É um serviço de armazenamento de dados para warehouse, normalmente usando para salvar grande volume de dados. Abaixo descrevo algumas percularidades desse sistema de armazenamento:
+
+	1. Colunas: 
+
+		O sistema de leitura dos dados armazenados são realizados no sistema de columas, melhorando assim a perfomace na busca de 			dados.
+
+	2. Volume: 
+
+		Toda instância desse tipo de banco tem volume inicial de 160GB de capacidade de armazenamento;
+
+	3. Compressão de dados:
+
+		Esse banco disponibiliza uma ótima compressão de dados, onde também essa compreensão ajuda e facilita a leitura de dados.
+
+
+A Amazon disponibiliza o serviço de Refshift de duas maneiras, Single Mode e Compute Mode, sendo essa as diferenças:
+
+	1. Single Mode: Disponibiliza uma instância de DB
+
+	2. Compute Mode: Disponibiliza até 128 instâncias de bancos de dados.
+
+
+Esse tipo de banco de dados utiliza o sistema de MPP (Massively Parallel Processing) onde possibilita a leitura em vários instância de banco de dados ao mesmo tempo, porém ele tem um ponto negativo onde não é possível aplicar Multi A-Z para instâncias criadas.
+
+ 
+
+
+
+
