@@ -1,0 +1,47 @@
+Route 53
+
+Como funciona o DNS e seus Servidores
+
+DNS (Domain Name Servers) pode ser associado a uma lista telefonica, onde atráves de um nome e sobrenome conseguimos chegar ao número de telefone da pessoa desejada, o DNS funciona da mesma maneira, por exemplo:
+
+
+						      Referência para o enderamento IP		IP
+				www.amazon.com		-------------------------> 		IPv4/IPv6 
+					|
+					|
+					|
+					v              Referência para o telefone               Telefone
+				Nome e Sobrenome	-------------------------> 		+XX (XX) XXXX - XXXX
+
+
+
+Agora vamos explicar melhor do uso de uma lista telefônica como referência, onde quando você faz uma requisição para um site em específico por exemplo a https://www.amazon.com a sua requisição é encaminhada para o seu provedor de internet (ISP) através de um DNS padrão que está na sua máquina.
+
+
+Após a requisição chegar nos servidores do seu provedor de internet e caso ele não consiga resolver esse endereçamento ele tem uma lista de servidores que conseguem informações de como resolver a requisição. No caso do endereçamento https://www.amazon.com ele encaminha o provedor de internet encaminha a requisição para o ROOT NAME SERVER que resolver requisições do tipo ".com".
+
+Após a requisição chegar no ROOT NAME SERVER se ele que não consegue resolver essa requisição em específico porem ele sabe quem pode ajudar a resolver essa requisição, então responde com possível servidor que consegue resolver essa requisição.
+
+
+Com a respota do ROOT NAME SERVER o resolver encaminha a requisição para um servidor conhecido como NAME SERVER onde ele pede o endereçamento de IP para "amazon" pois o ".com" já foi resolvido pelo ROOT NAME SERVER, assim ele devolve a reposta para resolver o possível servidor que consegue resolver essa requisição.
+
+
+Depois do resolver interpretar a resposta do NAME SERVER 1 ele encaminha a requisição para outro NAME SERVER 2 que responde com o endereçamento de ip para o site o da amazon, assim o resolver interpreta novamente essa requisição e encaminha essa requisição para o servidor correto.
+
+Abaixo segue os passos realizados para realizados para melhor indenticação de funcionamento:
+
+1. Requisição é realizada no browser
+  2. O DNS do computador encaminha a requisição para o ISP (Identity Service Provider)
+    3. O resolver encaminha a requisição para o ROOT NAME SERVER pedindo o servidores que conseguem resolver requisição com ".com"
+      4. O resolver pega a resposta do ROOT NAME SERVER e encaminha para o NAME SERVER pedindo a lista de servidores que consegue responder 		 pelo endereçamento amazon.
+        5. O Resolver pega a resposta do NAME SERVER e encaminha a requisição para um segundo NAME SERVER e assim é retornado o endereçamento 		   de IP do máquina Amazon.
+          6. Após a resposta do último NAME SERVER o resolver encaminha a requisição para o servidore certo onde tem os recursos da Amazon.
+
+
+
+
+ 
+
+
+
+
