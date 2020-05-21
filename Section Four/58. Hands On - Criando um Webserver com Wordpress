@@ -1,0 +1,27 @@
+AWS Database
+
+
+Webserves, Wordpress e MySQL
+
+Nesse labórtio foi criado um site usando o famoso Wordpress, assim para isso foi necessário configruar uma instância RDS MySQL free tier. Durante a criação é necessário configuar diversos paramêretos do banco de dados, como nome da instância, usuário, senha, rotina de backup, nome do banco e assim por diante.
+
+Um ponto importante durante a criação do banco de dados é com relação ao security group, onde devemos definir a criação de um security group específico na criação da instância de banco dados, nesse security group é adicionado automáticamente uma inbound rule padrão do banco de dados e também devemos adicionar uma rule específica MYSQL/Aurora com acesso ssh, http e https para o acesso da máquina EC2 ao banco incialmente criado.
+
+Com relação a instância EC2 criada, é uma instância padrão com um bootstrap diferente: 
+
+						#!/bin/bash
+						yum install httpd php php-mysql -y
+						cd /var/www/html
+						wget https://wordpress.org/wordpress-5.1.1.tar.gz
+						tar -xzf wordpress-5.1.1.tar.gz
+						cp -r wordpress/* /var/www/html/
+						rm -rf wordpress
+						rm -rf wordpress-5.1.1.tar.gz
+						chmod -R 755 wp-content
+						chown -R apache:apache wp-content
+						service httpd start
+						chkconfig httpd on
+
+
+
+Após isso é necessário configurar o wordpress e realizar a criação de um arquivo no na pasta /var/www/html para terminar de instalar e subir o Wordpress.

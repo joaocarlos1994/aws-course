@@ -1,0 +1,11 @@
+AWS Database
+
+
+MySQL Database
+
+Um ponto importante para certificação Amazon é a necessidade de estudos de todos parametros de configuração de cada banco disponibilizado pela Amazon, como capacidade máxima de armazenamento e assim por diante.
+
+
+Nesse exemplo foi criado um simple database com free tier, no momento da criação é possível e disponibilizado vários dois tipos de criação RDS. A primeira opção é a customizada onde você define parmêtros como capacidade máxima de armazenamento, cloudwatch, security e assim por diante, já a segunda opção é um easy create onde por definição a amazon deixa muito dos paramêtros já preenchidos e configurados.
+
+Para uma banco de dados de produção deve-se lembrar de sempre habilitar opções de backup, cloudwatch e assim por diante.

@@ -1,0 +1,20 @@
+AWS Database
+
+
+A AWS fornece dois tipos de banco de dados difetentes, entre eles estão relation e non-relation database. E esse tipos de bancos de dados podem ser classificados da seguinte maneira:
+
+	1. Multi-AZ: 
+
+	   A) Esse tipo de funcionalidade foi criada e lançada pela Amazon no caso de disaster recovery, ou seja, existe duas instâncias de bancos iguais trabalhando e os provedores devem se certificar de replicar e preeencher dados iguais para os dois bancos dados, que estão disponibilizados em avalaibility diferente, assim em caso de haver a indisponibilidade de uma das instância do banco de dados, a amazon automáticamente redireciona o fluxo para outra instância de banco de dados em automaticamente.
+	
+	2. Read Reaplica:
+
+	   A) Esse tipo de funcionalidade foi criada e lançada pela Amazon para distribuição de fluxo de carga de banco da dados, por exemplo, podemos ter no caso 4 aplicações iguais consultando um único banco de dados e sobrecarregando o mesmo, para resolver esse o problema a Amazon criou o Amazon Read Replic onde criamos dois ou mais banco iguais e assim distribuir a carga entre eles, no exemplo anterior mencionado podemos deixar as aplicação 1 e aplicação 2 acessando o database 1, e podemos deixar a aplicação 3 e aplicação 4 acessando o database 2. 
+
+	   B) Outro ponto positivo dessa funcionalidade além da distribuição de carga entre os databse é a replicação de dados realizadas entre os servidores onde é realizada de maneira assíncrona, não necessitando assim de mandeira manual a replicação de dados.
+
+	   C) Deve salientar-se que caso houver problemas em uma dessas instâncias de banco de dados o fluxo não será direcionado para outro banco de dados automáticamente, esse fluxo de mudança deve ser realizado de maneira manualmente, diferente do Multi-AZ, onde é realizado automáticamente.
+
+
+
+

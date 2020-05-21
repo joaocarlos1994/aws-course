@@ -1,0 +1,19 @@
+AWS Database
+
+DynamoDB
+
+O Amazon DynamoDB é um serviço de amazon para bancos NO SQL, onde a latência é muita baixa, proporcionando assim uma acesso muito rápido ao documento criado dentro do banco, normalmente esse banco é usado para aplicações que precisam de alta disponibilidade de dados em mileseconds. 
+
+Normalmente para aplicativos Web/mobile ou games, é aconselhado usar o DynamoDB, pois tem uma baixa latência e o tempo de resposta é em segundos. Um aspecto importante com relação a esse banco de dados é sua forma de armazenamento, onde é armazenado em disco SSD e é replicados em três data centers diferentes.
+
+O DynamoDB possuí dois tipos de leitura, no caso são as seguintes:
+
+	1. Consistent Read: 
+
+		No momento de writer e read de dados do banco NoSQL é aceitável um delay maior que 1 segundo entre as operações duas operações.
+
+	2. Strongly Consistent Read: 
+
+		No momento de writer e read de dados do banco NoSQL é tem a necessidade de realizar operações de read e writer menor que um 			segundo no documento criado, ou seja, trabalhando na casa mileseconds.
+
+
