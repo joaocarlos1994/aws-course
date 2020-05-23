@@ -1,0 +1,16 @@
+VPC
+
+Virtual Private Cloud - VPC disponibiliza a você a possibilidade de criar uma rede interna de comunicação entre suas máquinas, bancos de dados e demais tópicos e demais funcionalidades.
+
+É possível definir regra de acesso e grupo de acesso de acordo com subnet, como também definir um ponto de API Gateway para acesso interno a sua topologia.
+
+Um outro ponto importante é que podemos realizar a conexão da sua rede e infraestrutura interna a infraestrutura da Amazon, criado assim uma única sem diferença, isso se da atráves de uma VPN e demais configurações.
+
+
+
+
+ 
+
+
+
+
