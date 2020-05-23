@@ -1,0 +1,26 @@
+Route 53
+
+Geoproximity Routing Policy com Health Check
+
+A criação dessa Policy funciona práticamente como o traffic flow, onde assim podemos indentificar por onde o tráfico está passando e com esses detalhes tem a possbilidade de aplicar algumas regras e politicas de acordo com a necessidade.
+
+Por exemplo ele usa a policy de Geoproximity para distribuição do trafego e depois aplicar uma regra de failover no servidor direcionado para outro servidor em específico e assim por diante, chegando a aplciar N regras possíveis de acordo com a necessidade.
+
+
+
+	                                    ________                               ________
+		--------                    |      |				   |      |
+		|      |    Encaminha para  |ROUTE |  Encaminha p/ Servidores      | EC2  |
+		|      |  ----------------> | 53   | --------------------------->  |      |
+		|______|                    |      |                               |      | 
+	       /        \                   |      |				   |      |
+	       ----------                   |______|                               |______|
+
+
+
+
+ 
+
+
+
+

@@ -1,0 +1,23 @@
+Route 53
+
+Simple Routing Policy
+
+Para usar o Simple Routing Policy vamos precisar o user Rout53 que vai trabalhar com um mediator entre Host (Maquina do Usuário) e Servidores da Aplicação.
+
+
+	                                    ________                               ________
+		--------                    |      |				   |      |
+		|      |    Encaminha para  |ROUTE |  Encaminha p/ Servidores      | EC2  |
+		|      |  ----------------> | 53   | --------------------------->  |      |
+		|______|                    |      |                               |      | 
+	       /        \                   |      |				   |      |
+	       ----------                   |______|                               |______|
+
+
+ 
+De forma aleatória ele vai fazer o roteamento entre os servidores disponíveis, ou seja, ele deixa que você crie uma entrada "A" e depois disponibilize todos os IPs do servidores desejados.
+
+Um ponto importante durante a criação do "Create Record Set" o registro dos IPs no Simple Routing Policy é com relação TTL (Time To Deleviry) onde nessa opção customizamos o tempo de atualização dos IPs dos servidores da máquina no host (Cliente).
+
+
+

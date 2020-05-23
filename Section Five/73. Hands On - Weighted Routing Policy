@@ -1,0 +1,27 @@
+Route 53
+
+Weighted Routing Policy
+
+Na criação e associação dos IPs com o servidor de DNS devemos associar um servidor por vez no Record Set, assim após associar o servidor ao DNS espécifico devemos definir uma Policy específica de Weighted Routing, definindo assim distribuição das requisição para aquela máquina, e devemos fazer isso subsequente para as próximas máquinas.
+
+
+
+	                                    ________                               ________
+		--------                    |      |				   |      |
+		|      |    Encaminha para  |ROUTE |  Encaminha p/ Servidores      | EC2  |
+		|      |  ----------------> | 53   | --------------------------->  |      |
+		|______|                    |      |                               |      | 
+	       /        \                   |      |				   |      |
+	       ----------                   |______|                               |______|
+
+
+
+
+Após a criação da Weighted Routing Policy o Route53 vai cuidar para fazer a distribuição correta das requisições entre os servidores.
+
+
+ 
+
+
+
+
