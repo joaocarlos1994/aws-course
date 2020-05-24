@@ -1,0 +1,12 @@
+VPC
+
+Criando uma VPC para sua Empresa - Parte 4
+
+Esse capítulo teve como principal objetivo acessar outro servidor da rede Finance, esse servidor dentro da topólogia criada não tem acesso a rede de internet, para foi necessário realizar a criação do certificado .pem dentro do servidor Sales que tem acesso a rede de internet e demais funcionalidades.
+
+Também foi possível realizar o ping entre as duas subnet, ou seja, foi possível realizar o ping para Finance e o inverso também foi possível.
+
+
+
+
+

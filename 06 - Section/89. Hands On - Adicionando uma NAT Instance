@@ -1,0 +1,16 @@
+VPC
+
+Adicionando uma NAT Instance
+
+Para uma melhor proteção e segurança da sua topologia a criação do NAT instance é melhor adequado dentro da subnet que tem acesso a internet, no caso em específico vamos instlar o NAT Instance dentro da subnet de SALES pois possuí já acesso para internet via INTERNET GATWAY.
+
+Um ponto importante com relação a criação de uma instance EC2 NAT é a necessidade de desabilitar essa instância como ponto final e inicial de conexeão "Source destination check", porque o NAT tem como objetivo ser o mediator entre as requisições de IPv4 privado e público.
+
+Após a criação da instance EC2 NAT será necessário a criação de uma nova ROUTE TABLE, porque hoje existe apenas a route table do INTERNET GATEWAY onde não podemos associar a subnet de FINANCE porque assim vamos expor essa subnet para para o mundo externo. Após a criação da ROUTE TABLE para o NAT precisamos associar agora a subnet de FINANCE possibibilitando assim a saida para internet.
+
+Uma desvantagem com relação ao uso de NAT Insance EC2 é com relação a sua indisponibilização, onde em caso de falha da instance EC2 todo mundo dentro da subnet fica sem acesso a internet, no caso o departamento de FINANCE fica sem internet.
+
+
+
+
+
