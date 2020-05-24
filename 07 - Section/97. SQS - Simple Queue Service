@@ -1,0 +1,20 @@
+Aplicações AWS
+
+Simple Queue Service
+
+É um serviço de mensageria da Amazon que pode ser conectado a uma máquina EC2 ou banco de dados. Ele suporta mensagens do tamanho padrão de 256KB até 2GB.
+
+
+Qual a diferença entre o Amazon SQS e o Amazon SNS?
+----------------------------------------------------
+
+O Amazon SNS permite que aplicativos enviem mensagens críticas em termos de tempo para vários assinantes através de um mecanismo de “push”, eliminando a necessidade de verificar periodicamente ou “pesquisar” por atualizações. O Amazon SQS é um serviço de fila de mensagens usado por aplicativos distribuídos para trocar mensagens através de um modelo de sondagem e pode ser usado para desacoplar componentes de envio e recebimento. 
+
+
+Qual a diferença entre o Amazon SQS e o Amazon MQ?
+----------------------------------------------------
+
+Se você estiver usando sistemas de mensagens com aplicativos existentes e quiser migrar esses sistemas para a nuvem com rapidez e facilidade, recomendamos o Amazon MQ. O Amazon MQ oferece suporte a APIs e protocolos padrão do setor, o que permite mudar de qualquer agente de mensagens baseado em padrões para o Amazon MQ sem necessidade de recriar o código do sistema de mensagens dos aplicativos. Se você estiver criando aplicativos novos na nuvem, recomendamos o Amazon SQS e o Amazon SNS. O Amazon SQS e o Amazon SNS são serviços gerenciados de filas de mensagens e tópicos que escalam de forma praticamente infinita e oferecem APIs simples e fáceis de usar. 
+
+
+Obs.: Fully managed message queuing service. Transmit any volume of data, at any level of throughput, without losing messages or requiring other services to be always available. With SQS, you can offload the administrative burden of operating and scaling a highly available messaging cluster, while paying a low price for only what you use.
