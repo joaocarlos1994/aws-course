@@ -1,0 +1,22 @@
+VPC
+
+Criando uma VPC para sua Empresa - Parte 3
+
+Nesse capítulo foi trabalhado sobre Route Table onde precisamos relizar algumas modificações necessárias, o Route Table criado que foi criado automáticamente através da criação do VPC apenas sabe chegar no range de ip que definimos na criação da VPC, sendo assim necessário modifcações como
+
+	1. Modificar o Route Table para saída de internet através do Internet Gateway
+	   
+	   Destination                                                    Target
+	    0.0.0.0/0 ----------------------------------------------> Internet Gateway
+
+	2. Adicionar a Subnet criada específicamente para Sales dando acesso assim a internet.
+
+	3. Adicionar a Subnet SALES o Auto-assign public IPv4 address, isso possibilita a criação de IPv4 public para as subnet em específico.
+
+
+Um ponto específico durante a criação de uma máquina EC2 é que devemos associar a instância EC2 a VPC específica, assim como também a subnet desejada.
+
+
+
+
+

@@ -1,0 +1,16 @@
+VPC
+
+Criando uma VPC para sua Empresa - Parte 1
+
+Depois de criado uma VPC automáticamente a Amazon vai criar ACL e um Route Table para realizar a configuração da sua topologia,
+dentro dela podemos definir assim as subnet e as máquinas que irão ser ficar embaixo de cada de subnet.
+
+A partir disso conseguimos as ACL para acesso a cada subnet, ou seja, podemos definir o fluxo de entrada como o fluxo de saída de cada subnet usando o ACL.
+
+Tempos também o Route Table que contém os ip de todas as máquinas criadas dentro da VPC, ou seja, toda requisição vai chegar no route e ele vai consultar a Route Table para verificar para qual Subnet ele deve encaminhar a requisição.
+
+Lembrando que para deixar a nossa topologia para o acesso externo devemos usar o internet gateway para conceder esse aceso para nossa VPC.
+
+
+
+
