@@ -1,0 +1,8 @@
+Aplicações AWS
+
+SNS - Simple Notification Service
+
+O Amazon Simple Notification Service (SNS) é um serviço de envio de mensagens de publicação/assinatura totalmente gerenciado, altamente disponível, seguro e durável que permite o desacoplamento de microsserviços, sistemas distribuídos e aplicativos sem servidor. O Amazon SNS oferece tópicos para um envio de mensagens do tipo “muitos para muitos”, com base em push e alta taxa de transferência. Usando os tópicos do Amazon SNS, seus sistemas de divulgação podem enviar mensagens para um grande número de endpoints de assinantes para processamento em paralelo, incluindo filas do Amazon SQS, funções do AWS Lambda e webhooks HTTP/S. Além disso, o SNS pode ser usado para enviar notificações para usuários finais usando push para celular, SMS e e-mail.
+
+
+

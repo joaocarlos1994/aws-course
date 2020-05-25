@@ -1,0 +1,18 @@
+Aplicações AWS
+
+Kinesis
+
+
+O Amazon Kinesis facilita a coleta, o processamento e a análise de dados de streaming em tempo real, permitindo que você obtenha insights oportunos e reaja rapidamente às novas informações. O Amazon Kinesis oferece recursos essenciais para processar dados de streaming em qualquer escala de forma econômica, além da flexibilidade de escolher as ferramentas mais adequadas aos requisitos dos aplicativos. Com o Amazon Kinesis, você pode consumir dados em tempo real como vídeo, áudio, logs de aplicativos, clickstreams de sites e dados de telemetria de IoT para machine learning, análises e outros aplicativos. O Amazon Kinesis permite processar e analisar dados assim que são recebidos e responder instantaneamente, em vez de aguardar a conclusão da coleta de dados para poder iniciar o processamento.
+
+
+Existe três tipos de Kinesis sendo eles:
+
+	1- Amazon Kinesis Data Streams: É um serviço de streaming de dados em tempo real com escalabilidade massiva e resiliência. O KDS pode 		capturar continuamente gigabytes de dados por segundo de centenas de milhares de origens como clickstreams de sites, streams de 	eventos de banco de dados, transações financeiras, feeds de mídia social, logs de TI e eventos de rastreamento de local. Os dados 		coletados são disponibilizados em milissegundos para possibilitar casos de uso de análise em tempo real, como painéis em tempo real, 		detecção de anomalias em tempo real, definição de preço dinâmica e outros. Esse dados podem ser armazenados de 24 horas a 7 dias, onde 		esse dados são armazenados em uma espécie de SHAD (5 transações por segundo ou 2Mb por segundo)
+
+	2 - Firehose: é a maneira mais fácil de carregar de forma confiável dados de streaming em data lakes, datastores e ferramentas de 		análises. O serviço pode capturar, transformar e carregar dados de streaming no Amazon S3, Amazon Redshift, Amazon Elasticsearch 		Service e Splunk, possibilitando análises praticamente em tempo real com as ferramentas e painéis de inteligência de negócios que você 		já usa hoje. É um serviço totalmente gerenciado que escala automaticamente para atender à produtividade dos seus dados e não exige uma 		administração contínua. Ele pode separar em lotes, compactar, transformar e criptografar os dados antes de carregá-los, o que minimiza 		o volume de armazenamento usado no destino e aumenta a segurança. Com o Kinesis Data Firehose, você paga apenas pela quantidade de 		dados transmitidos pelo serviço e, se aplicável, pela conversão do formato de dados. Não há taxa mínima ou custo de configuração.
+
+	3 - Analytics: é a forma mais fácil de analisar dados de streaming, obter insights práticos e responder em tempo real às necessidades 		da empresa e dos clientes. O Amazon Kinesis Data Analytics reduz a complexidade de criar, gerenciar e integrar aplicativos de 		streaming com outros serviços da AWS. Os usuários de SQL podem consultar facilmente dados de streaming ou criar aplicativos inteiros 		de streaming usando modelos e um editor interativo de SQL. Os desenvolvedores de Java podem criar rapidamente aplicativos de streaming 		sofisticados usando bibliotecas Java de código aberto e integrações com a AWS para transformar e analisar dados em tempo real.
+
+
+
