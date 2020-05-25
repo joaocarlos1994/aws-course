@@ -1,0 +1,13 @@
+Serverless Lambda
+
+Criando um Site Serverless com Lambda - Parte 2
+
+Nesse capítulo foi criado um Bucket S3 apenas com uma página HTML que realizava a chamada para o API Gateway que foi criado no capítulo anterior.
+
+
+
+
+
+
+
+
