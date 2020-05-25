@@ -1,0 +1,39 @@
+VPC
+
+Diferenca entre Enderecos Public e Private
+
+É importante tomar conhecimento sobre IPv4 e IPv6 assim como máscara de rede. Por exemplo para descobrir se os seguintes endereços são privados pode verificar o range deles:
+
+IPv4:
+	A) 10.0.0.0 	--------> 10.255.255.255
+	B) 172.16.0.0	--------> 172.31.255.255
+	C) 192.168.0.0	--------> 192.168.255.255
+
+A Amazon também usa um sistema de mascara diferente do comun usado conectar em subredes diferentes, por exemplo:
+
+Para conectar duas máquina precisamos colocar ela na mesma máscara:
+			Rede  Host
+		     ____|___ _|_ 	
+	IPv4 ------> |10.1.1|.|1|
+					  8   8   8  8 = 32 
+                             ----------- 255.255.255.0
+			Rede  Host
+		     ____|___ _|_ 	
+	IPv4 ------> |10.1.2|.|2|
+	
+
+Para realizar a combinação das duas máquina dentro na mesma VPC em topólogia Amazon devemos usar o seguinte endereçamento de IP:
+
+			Rede  Host
+		     ____|___ _|_ 	
+	IPv4 ------> |10.1.1|.|1|/24
+					  8   8   8  8 = 32 
+                             ----------- 255.255.255.0
+			Rede  Host
+		     ____|___ _|_ 	
+	IPv4 ------> |10.1.2|.|2|/24
+
+
+
+
+

@@ -1,0 +1,11 @@
+VPC
+
+Criando um Flow Log
+
+O Flow Log é uma funcionalidade disponibilizada pela Amazon que ajuda na monitoração trâfego dentro de uma VPC. Através da ACL ele consegue realizar toda a monitaração de tráfego entre a rede externa para sua rede interna Amazon, muito útil para um possível tracing de um ataque hacker.
+
+
+
+
+
+

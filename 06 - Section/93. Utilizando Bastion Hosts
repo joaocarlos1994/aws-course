@@ -1,0 +1,11 @@
+VPC
+
+Bastion Hosts
+
+Bastion Hosts ou Jump Box é um servidor normalmente Windows que é o único que tem acesso a internet. O uso do Windows é aconselhado porque ele através do Windows pode realizar o uso do acesso SSH assim como RDP (Remote Desktop Protocol).
+
+O grande papel da Jump Box é permitir o acesso a qualquer ponto da sua topólogia Amazon, sendo esse ponto um banco de dados, servidores linux ou Window Server, concentrando assim toda segurança de em máquina, possibilitando assim a identificação de qualquer problema com facilidade e rapidez.
+
+
+
+

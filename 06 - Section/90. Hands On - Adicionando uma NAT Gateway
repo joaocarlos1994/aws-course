@@ -1,0 +1,16 @@
+VPC
+
+Adicionando uma NAT Gateway
+
+NAT Gateway é um dispositivo fornecido pela Amazon para realizar a saída de internet de IPv4 privados para a internet, ele básica funciona comoo NAT Instance que foi explicado anteriormente, porém ele é maior aconselhado para usar a na sua topologia.
+
+Na criado de uma NAT Gateway é necessário que sua subnet tenha acesso a internet e após a criação NAT Gateway é necessário realizar a criação de uma ROUTE TABLE específica para o NAT GATEWAY, onde você deve realizar as seguintes associações:
+
+	- Adcionar na aba ROUTE o endereço de IPv4 0.0.0.0/0 onde estamos realizando o previlégio de saída e entrada de pacotes da internet;
+
+	- Deve ser adicionado na ROUTE TABLE em escífico a subnet FINANCE, após isso a saída de internet vai estar funcionando corretamente.
+
+
+
+
+

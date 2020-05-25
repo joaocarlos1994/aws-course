@@ -1,0 +1,19 @@
+Amazon EC2
+
+Reserved Instances
+
+O mais prático a fazer é sempre buscar por contratos de instâncias reservadas, onde você sempre consegue um preço bem menor relacionado ao "On Demand".
+
+Para usar reservad instances é possível parametrizar a sua busca, assim como os métodos de pagamentos, uma coisa interessante sobre os métodos de pagamento é a relação de preço com método de pagamento, dentro elas as possibilidades:
+
+	- No Upfront: Não realiza pagamento antecipado, apenas no final do uso.
+	- Partial Upfront: Realização de uma parte do pagamento no começo e outra no final
+	- All Upfront : Realização do pagamento antecipadamente
+
+
+
+ 
+
+
+
+

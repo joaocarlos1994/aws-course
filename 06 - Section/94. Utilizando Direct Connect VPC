@@ -1,0 +1,12 @@
+VPC
+
+Direct Connect VPC
+
+Muitas empresas utilizam o Direct Connect quando desejam realizar um mistura entre máquinas físicas e máquinas da infraestrutura Amazon. O Direct Connect funciona atráves de uma parceira entre o provedor telecom e a Amazon, onde dentro de um datacenter da AWS tem um roteador direto para sua infraestura da Amazon e assim também um roteador da sua empresa de Telecom. Para funcionar com alta velocidade de conexão a infraestura física de sua com a cloud da Amazon é necessário comprar um link dedicado (Leased Line) e realizar o "Cross Connect" entre os roteadores da sua Telecom e roteadores Amazon.
+
+
+
+
+
+
+

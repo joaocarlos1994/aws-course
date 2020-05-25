@@ -1,0 +1,24 @@
+Route 53
+
+Geolocation Routing Policy
+
+Essa criação é com base na localização física do usuário, onde podemos definir para o Route53 direcionar o host (usuário) para o servidor mais próximo fisicamente dele, nesse pontos podemos até definir contéudo diferentes de acordo com geolocation do usuário.
+
+
+
+	                                    ________                               ________
+		--------                    |      |				   |      |
+		|      |    Encaminha para  |ROUTE |  Encaminha p/ Servidores      | EC2  |
+		|      |  ----------------> | 53   | --------------------------->  |      |
+		|______|                    |      |                               |      | 
+	       /        \                   |      |				   |      |
+	       ----------                   |______|                               |______|
+
+
+
+
+ 
+
+
+
+

@@ -1,0 +1,13 @@
+Amazon EC2
+
+AutoScaling para EC2
+
+Para usar o serviço de Autoscaling da Amazon é necessário criar uma configuração inicial, onde você deve fornecer informações qual o tipo de imagem que as instâncias EC2 irão usar, também o nome da configuração da configuração de Autoscaling, assim como storage e security group.
+
+Após a configuração do Autoscaling é necessário realizar a criação dos grupos do Autoscaling onde você realiza as configurações padrões como a quantidade de instâncias EC2 desejadas, quantidade mínima de instâncias EC2 e quantidade máxima de instâncias EC2 deseja.
+
+Realizando essas configurações é possível parametrizar as o uso ideal e adequado de instâncias EC2 para o negócio em específico, podendo assim economizar o máximo possível.
+
+
+
+

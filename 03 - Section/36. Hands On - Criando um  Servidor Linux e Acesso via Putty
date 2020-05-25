@@ -1,0 +1,32 @@
+Amazon EC2
+
+Linux Server (Web)
+
+How to genate a pulbic .ppk file on linux:
+
+	<code>
+	 sudo puttygen linuxwebserver.pem -o linuxwebserver.ppk -O public
+	</code>
+
+How to genate a private .ppk file on linux:
+
+	<code>
+	 sudo puttygen linuxwebserver.pem -o linuxwebserver-private.ppk -O private
+	</code>
+
+It was possible connect to this server using the follwig commad:
+
+	<code>chmod 400 name-of-key.pem</code>
+
+And you need to fill up the follwing command:
+
+	<code> ssh -i "name-of-key.pem" ec2-user@ec2-ip-address.us-west-2.compute.amazonaws.com </code>
+
+
+For install and active apache you need to active the security group http and https to start apache.
+
+ 
+
+
+
+

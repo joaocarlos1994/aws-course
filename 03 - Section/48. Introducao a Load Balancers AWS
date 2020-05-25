@@ -1,0 +1,34 @@
+Amazon EC2
+
+Load Balancers AWS
+
+Load Balance é um serviço de destribuição de cargas, ou seja, quando você faz uma requesição http/https para para um servidor em específico, ele resolve o DNS padrão desse IP e encaminhar a requisição para um Load Balance, após essa requisição chegar no Load Balance ele decide qual serviço específico pode resolver essa requisição, assim como fazer a distribuição de requisição entre esses servidores.
+
+Por exemplo podemos ter três servidores específios Servidor 1, Servidor 2 e Servidor 3. Após a requisição chear no loado balance ele vai distribuir 50% da requisições para o Servidor 1, 25% das requisições para o Servidor 2 e Servidor 3.
+
+
+A Amazon disponibiliza de três Load Balance nos seus servidos, entre as layer 7 e layer 4. Nesse exemplo em específico uma layer na camada 4 não pode acessar a layer da camada 7, por fim  esses são os Load Balance disponibilizado pela Amazon:
+	
+	1. Application Load Balance: É o mais novo e utilizado serviço de Load Balance, onde ele é aplicado na layer 7, ou seja nas 		requisições HTTP/HTTPS realizando a distribuição da carga.
+
+	2. Network Load Balance: É um serviço utilizado para distribuição de carga de network (TCP) para upload de arquivos, dns e afins. Esse 		tipo de Load Balance encontra-se no layer 4.
+
+
+	3. Classic Load Balance: Esse é o mais antigo e menos usado, ele tem objetivo realizar os mesmos serviços apresentados no tipo de load 		balance anterior. Ele está caindo em desuso devido ao fato de realizar muitas coisas ao mesmo tempo, podendo assim complicar o uso de 		sua utilização.
+
+
+Um detalhe sobre Loadbalance é com relação ao seu funcionamento, onde toda vez que uma requisição chega no Loadbalance, durante o processo de incoming request para o servidor especifico, o Loadbalance adiciona no header da requisição é adicionado o ip de origem, normalmente o nome do header é algo parecido como x-forwad for.
+
+
+Outro detalhe interessante é com relação ao status code 504, que significa que o loadbalance conseguiu achar o servidor destino da requisição, porém ele não conseguiu devolver o resultado esperado para origem,
+
+
+
+
+
+
+ 
+
+
+
+

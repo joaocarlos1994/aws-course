@@ -1,0 +1,9 @@
+Aplicações AWS
+
+Simple Workflow Service
+
+É uma aplicação da Amazon usado para executar um conjunto de tarefas em específico respeitando uma determinada ordem.
+
+O Amazon SWF ajuda os desenvolvedores a criar, executar e dimensionar trabalhos em segundo plano que têm etapas paralelas ou sequenciais. Pode-se pensar no Amazon SWF como um rastreador de estado e coordenador de tarefas totalmente gerenciado na nuvem.
+
+Se as etapas de seu aplicativo levam mais de 500 milissegundos para serem concluídas, você precisa rastrear o estado do processamento. E se precisa recuperar ou tentar novamente se uma tarefa falha, o Amazon SWF pode ajudá-lo.

@@ -1,0 +1,23 @@
+Route 53
+
+Latency Routing Policy com Health Check
+
+
+Básicamente utilizamos a criação Latency Routing Policy onde definir para o Route53 deve realizar a distribuição da requisição para o menor ponto de latência, normalmente é o servidore físico mais próximo do host (client).
+
+	                                    ________                               ________
+		--------                    |      |				   |      |
+		|      |    Encaminha para  |ROUTE |  Encaminha p/ Servidores      | EC2  |
+		|      |  ----------------> | 53   | --------------------------->  |      |
+		|______|                    |      |                               |      | 
+	       /        \                   |      |				   |      |
+	       ----------                   |______|                               |______|
+
+
+
+
+ 
+
+
+
+

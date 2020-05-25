@@ -1,0 +1,11 @@
+AWS Database
+
+Elasticache
+
+A Amazon disponibiliza dois tipos de bancos baseados em cache, sendo eles:
+
+	1. Memcached: Ele utiliza objetos para armazenar Cache
+
+	2. Redis: Utiliza o esquema de armazenamento de key and value, ele é unico que disponibiliza Multi A-Z.
+
+

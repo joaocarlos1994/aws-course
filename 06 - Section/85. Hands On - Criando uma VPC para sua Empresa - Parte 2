@@ -1,0 +1,29 @@
+VPC
+
+Criando uma VPC para sua Empresa - Parte 2
+
+Durante a criação de uma subnet a Amazon reserva no caso cinco endereço de IP, onde no caso fica disponível para você 251 possíveis endereços de IP, no abaixo temos a descrição do uso dos IPs para rede de IP 10.1.1.0/24:
+
+	- 10.1.1.0/24: O é o endereçamento da própria rede, ele não pode ser utilizado.
+	
+	- 10.1.1.1/24: 1 é o endereçamento reservado para o roteador VPC
+
+	- 10.1.1.2/24: 2 é o endereçamento reservado para o servidor de DNS
+
+	- 10.1.1.3/24: 3 é o endereçamento usado para o uso futuro da Amazon
+
+	- 10.1.1.255/24: 255 é o endereçamento utilizado para broadcast
+
+
+Nesse capítulo será adicionado e criado duas subnet, no exemplo em específico foi criado as seguintes subnet:
+
+	- 10.1.1.0/24: CLUB_CLOUD_SALES foi criado essa subnet exclusivamente para o setor específico de vendas;
+
+	- 10.1.2.0/23: CLUB_CLOUD_FINANCE foi criado exclusivamente para o setor específico de finanças
+
+
+Para realizar a criação da subnet devemos primeiramente realizar a associação do VPC e selecionar qual Edge Location que desejamos disponibilizar as subnet.
+
+Após a criação das duas subnet foi necessário realizar a criação do Internet Gateway, onde para sua criação definimos um nome específico, após a sua criação é necessário editar qual VPC o Internet Gateway está associado, porque por padrão durante a sua criação não possível definir e nem associar a qual VPC o Internet Gateway está relacionado.
+
+

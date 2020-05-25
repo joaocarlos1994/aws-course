@@ -1,0 +1,23 @@
+Amazon EC2
+
+Trabalhando com Roles.
+
+
+Quando usamos AWS CLI em uma máquina local ou uma instância EC2 da Amazon realizamos uma exposição dos dados ACCESS_KEY e SECRECT_KEY em uma pasta oculta ".aws", o que pode não ser conveniente por expor todos os dados críticos, podendo assim um potencial hacker ter acessos a todos os dados da conta AWS.
+
+Para evitar esse problema é aconselhado o uso de ROLE para instâncias EC2. O IAM possibilita a criação de role customizada de acordo com uma Policy específica, por exemplo, podemos configurar uma ROLE com policy específicas para o acesso ao S3, e aplicar ROLE e uma instância específica C2.
+
+Através desse mecânismo podemos deixar mais seguros as instâncias EC2 e não guardar ACCESS_KEY e SECRECT_KEY dentro de uma pasta no .aws.
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+

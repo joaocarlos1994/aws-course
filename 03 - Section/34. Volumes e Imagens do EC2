@@ -1,0 +1,23 @@
+Amazon EC2
+
+Volumes e Imagens no EC2
+
+Volumes dentro do EC2 são conhecidos como EBS (Elastic Block Storage).
+
+O EBS é utilizado para conectar a uma máquina virtual, existem tipos de volumes que permitem o armazenamentos de um sistema operacional e outros volume que não possibilitam esse armazenamento. Esses cincos tipos podem ser classificados da seguinte maneira:
+
+	- GP2 (General Propose 2): Dentro dessa possibilidade é possível encontrar o tipo de volume disponível SSD. A Amazon usa por padrão a unidade de medida IOPS (Input/Output Operation per seconds) onde nesse modelo é possível alcançar de 3 a 10.000 IOPS. Não é possível alcançar nesse modelo o otimização máxima devido a criação de disco virtual.
+
+	- Provised SSD: Esse volume também é conhecido por IO1. Ele é feito e fábrica para aplicativas de alta itensidade, no caso, banco de dados como MySQL, SQL Server, MongoDB e etc. Nesse tipo de volume sua unidade de volume pode chegar 20.000 IOPS, onde no caso mínimo começa em 10.000.
+
+	- ST1: Esse volume em especifico é um dispositivo de HDD, onde normalmente é usado para backup, log e etc. Uma grande peculiaridade desse volume é que nesse volume não é permetido o boot de sistemas operacionais.
+
+	- SC1: Esse volume é conhecido como cold HDD, ele também é usado para backup, log e demais opção, porém ele usado como infrequenty access, ou seja, a maior vantagem desse disco é o menor preço a ser pago.
+
+	- Magnetic: Esse volume também é usado para infrequenty access e é um volume HDD, porém ele é um volume que suporta "C:", ou seja, ele suporta boot.
+
+ 
+
+
+
+

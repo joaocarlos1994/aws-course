@@ -1,0 +1,12 @@
+Amazon S3
+
+LifeCycle é relacioando a vida útil dos arquivos dentro do bucket, podendo ser aplicado para todo o bucket por padrão ou para um específico tipo de arquivos. Assim você realiza a criação de regras (Policy) para transferência desses arquivos para outros bucket com menor custo associado de acordo com os dias especificados. Também é possível definir regras para a deleção definitiva dos arquivos do bucket.
+
+Um ponto importante a ser mencionado é com relação a LifeCycle é que ele pode ser aplicados para novos objetos e objetos antigos dentro do Bucket.
+
+
+
+
+
+
+

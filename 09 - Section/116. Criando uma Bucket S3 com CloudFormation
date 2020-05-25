@@ -1,0 +1,23 @@
+Cloudformation
+
+Criando uma Bucket S3 com CloudFormation
+
+
+Para realizar a criação de uma Bucket S3 usando o Cloudformation podendo usar o seguiente código marcação YAML, por exemplo:
+
+
+						---
+						Resources:
+						  MinhasBuckets:
+						    Type: AWS::S3::Bucket
+						    Properties:
+						      AccessControl: PublicRead
+						      BucketName: "financeiro-empresa-joaocarlos1994"
+
+
+Um ponte importante é com relação ao nome da Bucket o "BucketName" onde não podemos usar letras maíusculas porque o nome criado para o uso de criação de DNS.
+
+
+
+
+

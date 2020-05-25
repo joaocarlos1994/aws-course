@@ -1,0 +1,12 @@
+Storage Gateway
+
+Storage Gateway é um mecânicos de armazenos dentro de uma Bucket no S3 da amazon, esse produto tem como principal objetivo realizar upload de um arquivo de um datacenter privado para a bucket S3, usando um software disponível criado pela amazon webservices.
+
+Existe três opções de armazenamentos dentro do Storage Gateway:
+	
+	- File Gateway: Usado específicamente para arquivos estáticos como vídeos, imagens, pdf e etc.
+	- Volume Gateway: Usado específicamente para sistmas operacionais, ou seja, um sistema de disco virtual, usa como padrão o (iSCSI) para esse armazenamento dentro da Bucket S3, você praticamente tem um snapshot da máquina virtual.
+	- Tape Gateway - Usado específicamente para armazenamento de backup, é criado uma espécie de disco virtual dentro da bucket, isso é armazenado em uma bucket do tipo Glacier.
+
+Para maiores informações consultar o seguinte link:
+https://docs.aws.amazon.com/pt_br/storagegateway/latest/userguide/StorageGatewayConcepts.html

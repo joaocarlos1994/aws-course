@@ -1,0 +1,29 @@
+Amazon EC2
+
+Criando um  Servidor Windows 2019 no EC2
+
+
+A criação de instânicas EC2 estão relacionadas a região que foi criada, por exemplo, quando criamos estâncias EC2 em Ohio a mesma não é visualziada em Virgia.
+
+Para criação de uma máquina virtual são necessários sete para criação:
+
+	1 - Choose an Amazon Machine Image (AMI);
+
+	2 - Choose Instance Type: Nesse ponto em específico é escolhido o tipo de engineer da máquina;
+
+	3 - Configure Instance: Nesse ponto em específico é configurado detalhes sobre a instâncias como networking, monitoração, tenancy, T2/T3 Unlimited (Autoscaling memória/cpu) e assim por diante.
+
+	4 - Add Storage: Nesse ponto em específico você escolhe o tipo de EBS (Storage) para máquina solicitada.
+
+	5 - Add Tags: Nesse ponto e adicionado identificação para máquina criada, importante para rastrabilidade.
+
+	6 - Configure Security Group: Criação de rega de firewall para permitir trâfego apenas HTTP, HTTPS e RDP (Remote Desktop Protocol) a partir de um IP em específico.
+
+
+	7 - Review: Aqui é verificado todos os passos que foram realizados anteriormente.
+
+ 
+
+
+
+

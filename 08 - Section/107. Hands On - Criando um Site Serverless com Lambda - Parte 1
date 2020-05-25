@@ -1,0 +1,30 @@
+Serverless Lambda
+
+Criando um Site Serverless com Lambda - Parte 1
+
+Inicialmente nesse capítulo é necessário criar uma função lambda onde nela podemos definir trechos de código de diferentes linguaguem para serem executados, no exemplo abaxio sera usado um código Pyhton com retorno de mensagem dizendo que a lambda criado está funcionando:
+
+Python Code:
+						def lambda_handler(event, context):
+						    print("In lambda handler")
+
+						    resp = {
+							"statusCode": 200,
+							"headers": {
+							    "Access-Control-Allow-Origin": "*",
+							},
+							"body": "--- SITE SERVERLESS FUNCIONANDO ---"
+						    }
+
+						    return resp
+
+
+Inicialmente para executar essa função (Ou realizar trigger) é necessário criar uma API Gateway que vai realizar o Proxy com o código que foi criado inicialmente no momento da criação da função. O trigger da execução dessa função é realizado através de um Endpoint disponibilizado pelo próprio API Gateway.
+
+Por default o API Gateway realizar a criação de um Endpoint que responde a qualquer http method request, no caso ele descreve como "ANY" porém para realizar o Trigger corretamente dessa função é necessário realizar a criação de um nova função para o httd method GET é colocar a função incialmente criada e realizar o seu deploy, após isso o API Gateway consegue triggar a função criada através do Endpoint.
+
+
+
+
+
+

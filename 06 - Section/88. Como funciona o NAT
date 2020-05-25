@@ -1,0 +1,52 @@
+VPC
+
+Como funciona o NAT
+
+O NAT (Netework Address Translator) é na maioria dos casos um roteador o um firewall, normalmente ele tem um enderçamento privado (IPv4 Privado) e ele também tem um enderaçamento público que da acesso a internet, onde toda requisição que ele recebe de um enderaçamento privádo ele faz a tradução desta requisição para um endereço público e cria uma tabela.
+
+Por exemplo suponhamos que o IPv4 10.1.1.80/24 privado deseja sair para internet, ele faz o encaminhamento do pacote para o IPv4 10.1.1.1/24 privado do NAT, após isso o NAT registra na ROUTE TABLE qual IPv4 privado está saindo e para onde ele está saindo, no exemplo abaixo ele está saindo para o endereço de IPv4 8.8.8.8, porém antes disso é necessário que o NAT faça a tradução dessa requisição para o IPv4 público do NAT, no caso 200.1.1.1.
+
+Após a Web receber o pacote da requisição ele devolve esse pacote para o NAT novamente, onde com base nos registro da ROUTE TABLE do NAT ele consegue encaminhar o pacote de resposta do IPv4 8.8.8.8 para o IPv4 10.1.1.80 privado que inicialmente tinha pedido o registro. 
+
+
+		--------
+		|      | 10.1.1.81/24 -> IPv4 Privado
+		|      |
+		|______|
+	       /        \ 
+	       ---------- 
+		    |                IPv4 Privado                                      IPv4 8.8.8.8
+		    |                /               NAT público IPv4 200.1.1.1             /
+		    |	 10.1.1.80/24       ________  /                            ________/
+		--------                    |      | |				   |      |
+		|      |    Encaminha para  | NAT  | | Encaminha p/ WEB            | WEB  |
+		|      |  ---------------->°|      |°--------------------------->  |      |
+		|______|                  / |      |                               |      | 
+	       /        \ NAT IPv4 10.1.1.1 |      |				   |      |
+	       ----------     Privado       |______|                               |______|
+		    |
+		    |
+		    |
+		    |
+		--------
+		|      | 10.1.1.79/24 -> IPv4 Privado
+		|      |
+		|______|
+	       /        \
+	       ----------
+
+
+
+Dentro no NAT existe uma extensão chamada PAT (Port Address Translator) que tem por objetivo não precisar de um IP público para cada IPv4 privado dentro da sua tópologia, ele consegue realizar esse mecanismo usando uma porta específica para cada IPv4 privado. Por exemplo no caso anterior a requisição do IPv4 privado 10.1.1.80:170 saiu pela porta 170 e o NAT fez a traduação para o IPv4 público 200.1.1.1:170 não necessitando assim criação de novo IP e podendo assim identificar no retorno do pacote da Web qual IP privado solicitou aquele pacote.
+
+
+Dentro da AWS existe dois tipos de NAT possiveis e disponibilizados sendos eles o NAT instance e o NAT Gateway. Segue a descrição de cada um:
+
+	1) NAT Instance: É um dispositivo criado parecido como uma instância EC2
+
+	2) Nat Gateway: É basicamente uma aplicação responsável por realizar as traduações necessárias, sendo assim muito mais confiável.
+
+
+
+
+

@@ -1,0 +1,10 @@
+Amazon S3
+
+Essa tratou sobre versionamento de arquivos, onde a AWS fornece um funcionalidade versionamento de todos arquivos, sendo assim possível recuperar qualquer versão dos arquivos. É possível aplicar o versionamento até para caso deleção dos arquivos, onde a AWS realiza um logical
+delete.
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+CloudFormation
+
+O que e CloudFormation
+
+
+O AWS CloudFormation oferece uma linguagem comum para modelar e provisionar recursos de aplicativos da AWS e terceirizados em um ambiente de nuvem. O AWS CloudFormation permite usar linguagens de programação ou um arquivo de texto simples como JSON ou YAML para modelar e provisionar de forma automática e segura todos os recursos necessários para os aplicativos em todas as regiões e contas. Isso cria uma única fonte confiável para concentrar os seus recursos da AWS e terceirizados.
+
+Por exemplo o AWS CloudFormation permite criar e provisionar implantações de infraestrutura da AWS de forma previsível e repetida. O serviço ajuda a utilizar produtos da AWS como Amazon EC2, Amazon Elastic Block Store, Amazon SNS, Elastic Load Balancing e Auto Scaling para criar aplicativos altamente confiável, escaláveis e econômicos na nuvem sem se preocupar com a criação e a configuração da infraestrutura da AWS subjacente. O AWS CloudFormation permite usar um arquivo de modelo para criar e excluir uma coleção de recursos em conjunto como uma única unidade (uma pilha).
+
+

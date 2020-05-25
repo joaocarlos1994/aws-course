@@ -1,0 +1,14 @@
+Amazon S3
+
+CloudFront é o serviço de CDN (Content Delivery Network) que tem por objetivo realizar a replicação de arquivos na Availability Zone mas próxima do usuário da requisição, ou seja, se realizarmos a disponibilização do arquivo em uma bucket em São Paulo e um usuário que mora 
+China requisitar o mesmo arquivo, será realizado a primeira vez desse acesso a cópia desse arquivo para  uma Availability Zone da China,
+colocando assim o arquivo em uma espécie de cache, podendo ser configurado o tempo de cache.
+
+Um outro ponto importante do CDN é que ele é usado para live stream, diminuindo assim o tempo de latência.
+
+
+
+
+
+
+

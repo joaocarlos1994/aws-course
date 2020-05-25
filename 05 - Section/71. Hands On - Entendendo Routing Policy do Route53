@@ -1,0 +1,29 @@
+Route 53
+
+Entendendo Routing Policy do Route53
+
+Existe três tipos de métricas possíveis dentro do Rout53, sendo elas:
+
+	- Simple Routing: Dentro desse caso em específico será realizado o balanceamento com base no DNS específico, ou seja, no caso de haver 		dois servidores a primeira requisição vai para o primeiro servidor, e a segunda requisição para o segundo servidor.
+
+	- Failover: Este tem como principal objetivo realizar o balanceamento de todas requisições apenas para o servidores que estão 		funcionando. No caso em específico de haver dois servidores e um ficar indisponível ela realizar a distribuição para o único servidor 		que está funcionando.
+
+	- Geolocation Routing: Roteamento para o servidor mais próximo físicamente do usuário, evitândo assim grandes latências, no caso de 		haver um servidor indisponível ele vai procurar o próximo servidor mais próximo fisícamente do usuário.
+
+	- Geoproximity Routing (Trafic Flow Only): Esse é relacionado ao "Geolocation Routing" com a diferênça que ele considera os recursos 		disponível dos servidores mais próximos. 
+
+	- Latency-based Routing: Esse está relacionado a menor latência entre o usuário e o servidor, ou seja, ele não considera o servidor 		mais próximo geologicamente e sim a menor latêcia possível.
+
+	- Multivalue Answer Routing: É semelhante ao "Simple Routing" porém nesse modelo é passados uma lista de IPs com base no DNS.
+
+	- Weigthed Routing: Esse está relacionado ao balanceamento de carga um podemos definir que 80% serão recebidas por um servidor em 		específico e 20% serão recebidas por outro servidor em específico.
+
+
+
+
+
+ 
+
+
+
+

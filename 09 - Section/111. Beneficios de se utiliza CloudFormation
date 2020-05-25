@@ -1,0 +1,12 @@
+CloudFormation
+
+Beneficios de se utiliza CloudFormation
+
+
+O AWS CloudFormation permite que você modele toda sua infraestrutura e recursos de aplicativos usando um arquivo de texto ou linguagens de programação. O AWS CloudFormation Registry e a CLI facilitam o gerenciamento de recursos terceirizados com o CloudFormation. Isso cria uma única fonte confiável para concentrar os seus recursos e ajuda a padronizar componentes de infraestrutura usados em sua organização, o que permite manter a conformidade das configurações e agilidade na resolução de problemas.
+
+O AWS CloudFormation provisiona recursos de forma segura e replicável, permitindo criar e recriar a sua infraestrutura e aplicativos, sem precisar executar ações manuais ou gravar scripts personalizados. O CloudFormation se encarrega de determinar quais são as operações mais adequadas para gerenciar a sua pilha, organizando-as da maneira mais eficiente, além de automaticamente reverter alterações ao encontrar erros.
+
+Ao codificar sua infraestrutura, você pode tratá-la como apenas um código. Você pode criar uma infraestrutura em qualquer editor de código, testá-la em um sistema de controle de versões e analisar os arquivos com os membros da equipe antes de implantá-los na produção.
+
+

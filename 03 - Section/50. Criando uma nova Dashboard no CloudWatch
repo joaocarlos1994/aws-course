@@ -1,0 +1,15 @@
+Amazon EC2
+
+Dashboard no CloudWatch
+
+Dentro do CloudWatch é possível criar dashboard customizados para sua necessidade, por exemplo, é possível criar um dashboard para Webserver Linux, Windows 2019 AD e assim por diante.
+
+Esse serviço está disponível dentro do serviço Management & Governance, e nele tem várias opção Widget e podendo coletar informações importante de sua infraestrutura na Amazon.
+
+
+
+ 
+
+
+
+

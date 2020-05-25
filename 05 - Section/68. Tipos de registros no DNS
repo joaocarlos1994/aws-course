@@ -1,0 +1,46 @@
+Route 53
+
+DNS Records
+
+DNS Records são registros que são armazenados dentro de um servidor DNS. Existe sete tipo comuns de registro de DNS usados, sendo eles:
+
+	1. Host A (A ou AAAA): É um tipo de registro onde dentro da árvore de DNS que específicamos o endereçamento ip do site completo, por 		exemplo podemos exemplificar o endereçamento 1.1.1.1. O A é usado para IPv4 e o AAAA é usado para endereçamento IPv6. Esse tipo de 		serviço também pode funcionar para serviços internos de uma rede.
+
+	2. ALIAS (CNAME): Também conhecido como canonical name e é utilizando muito em conjutno com o Host A. Por exemplo temos um registro 		https://www.amazon.com apontando para o endereçamento de IP: 1.1.1.1 usando Host A e desejamos adicionar registrar mais um site 	no domínio como https://www.curso.amazon.com onde o domínio curso é conhecido como CNAME é aponta para um endereçamento diferente.
+
+	3. Mail Exchange (MX): Os registros MX são referentes ao servidor de e-mail, onde o endereço fica parecido como mx.amazon.com com uma 		prority nesse servidor, por exemplo:
+		
+		Domínio				Priority
+		mx.amazon.com			    5
+		mx.amazon.com                       10
+
+	5. Service Record (SRV): É registro utilizado para serviço onde necessitam que aplicações aprendam sobre sobre ele é aconselhado usar 		esse registro. Por exemplo quanto tempo um SRV direcionado para um IP em específico ele indica informações como:
+	
+		- Indica se o serviço está rodando, por exemplo LDAP;
+		- Indica qual é o target, ou seja, o ip utilizado por essse serviço;
+		- Indica qual é a porta;
+		- Indica qual é o priority;
+
+	6. Start of Authority (SOA): Esse registro é relacionado a zone, ou seja, existe um SOA por zone, e ele normalmente é o name server 		(Primary Name Server). Por exemplo no arquivo anterior o último servidor que tinha informações de IP do site da Amazon, no caso aquele
+	servidor mantém o SOA. Dentro o SOA você tem a seguintes informações:
+
+		- Informações como o Name Server;
+		- E-mail do administrador que registrou o domínio;
+		- Informações sobre Serial Number;
+		- Informações sobre refresh time (Atualização de tabelas de DNS)
+
+	7. Name Server (NS): Registro desse domínio temo informações de records e melhor origem para todas as requisições que ele está 		recebendo. O Name server armazena o Start of Authority
+
+	8. Pointer (PTR): Ele faz o inverso do Host A, ou seja, ele transforma um endereço de IP para o DNS.
+		
+
+
+
+
+
+
+ 
+
+
+
+

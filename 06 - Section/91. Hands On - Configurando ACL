@@ -1,0 +1,22 @@
+VPC
+
+Configurando ACL
+
+O Access Control List ou mais formalmente conhecido como ACL é um sistema de configuração de permissões ou bloqueios de acesso a um determinado serviço ou acesso, funciona práticamente como um Firewall de segurança.
+
+A ACL tem um sistema de permissão baseadas em regras inbound e outbound, onde as regras inbound significa acesso de entrada dentro do VPC e regras de outbound significa regras de saída de VPC.
+
+Uma sintese muito comum que pode ser realizada com ACL é com relação a uma festa que tem um segurança na porta de entrada com a lista de convidados da festa, onde na chegada de cada convidado ele realiza a verificação sequencial de cada nome na lista, achando esse nome ele permite a entrada na festa.
+
+Por padrão dentro da Amazon toda vez que é criado uma VPC a Amazon por default cria uma ACL automáticamente, essa ACL por padrão é "all allowed" ou seja ela permite todo tráfico de entrada e saída. Na criação de uma nova ACL todas as regas de acesso e saída estão definidas como "all deny", necessitando assim de configurações da regras que achar peculiar a determianda subnet.
+
+A Amazon por padrão criou um contexto de "Ephemeral Ports" onde para funcionar algum de tipo de Gateway Nat, AWS Lambda, Elastic Load Balancing é necessário permitir regras de inbound para as seguintes portas, assim como regras de outbound também para as seguintes portas, permitindo assim o funcionamento de acesso SSH como demais serviços mencionados acima.
+
+No caso de um servidor Web também é necessário realizar a liberação das portas 80 para request HTTP, assim como 443 para request HTTPS garantindo assim seu funcionamento correto.
+
+
+
+
+
+
+

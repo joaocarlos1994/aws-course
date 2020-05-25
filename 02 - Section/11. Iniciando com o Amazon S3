@@ -1,0 +1,30 @@
+Amazon S3
+
+Amazon S3 significa "SIMPLE STORAGE SERVICE" e foi criado para armazenar arquivos. Existe o limite máximo de 5TB por arquivos.
+
+O Storage é unlimited e você paga por Gigabyte.
+
+Os discos são tratados como BUCKETS (Cestas). Dentro do bucket pode haver pastas e suas divisões normais. O nomes dos buckets devem ser únicos mundialmente. Quando criamos um bucket inicialmente ganhamos um DNS (URL).
+
+Ex.: https://s3-us-west-2.amazonaws.com/BUCKET_NAME/FOLDER/FILE_NAME
+
+s3 -> Simple Storage Manager
+us-west-2 -> Region
+BUCKET_NAME -> Unique Identify
+FOLDER -> Pasta
+FILE_NAME -> Nome do arquivo
+
+A amazon garante 99.9% avaliability dos bucket e ela garante também a durability (Upload de arquivos) de 99.999..%
+
+A amazon possuí diferentes tipo de preço para os buckets, chamados TIERS.
+
+Versioning é uma funcionalidade de amazon que realiza um versionamentos dos arquivos. Esse procedimento se da através de um tag/label
+
+Encryption -> É possível realizar a o encryption de todos os arquivos
+
+ACL -> Permissionamento por grupos e usuário a determinados arquivos
+
+Bucket Police -> É possível criar uma police para permissionamento de acesso a arquivos
+
+
+

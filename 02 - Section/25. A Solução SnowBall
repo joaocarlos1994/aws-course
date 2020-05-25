@@ -1,0 +1,10 @@
+Snowball
+
+Snowball é um serviço disponibilizado pela amazon para transferência de uma grande quantidade de dados, no caso em específico são disponibilizado de três serviços diferentes para transferência de dados:
+
+	1 - Snowball: Esse serviço de transferência a Amazon fornece uma especie de maleta para realização de upload de arquivos, a capacidade máxima de upload nessa maleta é de 80 TB.
+
+	2 - Snowball Edge: É um serviço semalhante ao Snowball, porém a capacidade de armazenamento da maleta aumenta para 100 TB, e também existe uma máquina local dentro da maleta para realizar parelamento de alguns dispositivos para realizar o upload.
+
+	3 - Snowmobile: É um serviço da Amazon para transferir uma quantidade equivalante a 100 PetaByte, para a realização desse serviço a Amazon disponibiliza um caminhão para realizar essa transferência, contendo assim todos os itens anteriores, assim como seguraça e demais serviços.
+

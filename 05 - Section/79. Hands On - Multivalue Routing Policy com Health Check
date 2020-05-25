@@ -1,0 +1,24 @@
+Route 53
+
+Multivalue Routing Policy com Health Check
+
+Multivalue Routing Policy é parecido com "Simple Routing Policy" com a diferença que ele consegue realizar a distribuição do trâfego para os servidores disponível, coisa que o "Simple Routing Policy" não consegue pois não é possível ativer o heath check nessa policy, assim o Route53 consegue realizar o distribuição correta.
+
+
+
+	                                    ________                               ________
+		--------                    |      |				   |      |
+		|      |    Encaminha para  |ROUTE |  Encaminha p/ Servidores      | EC2  |
+		|      |  ----------------> | 53   | --------------------------->  |      |
+		|______|                    |      |                               |      | 
+	       /        \                   |      |				   |      |
+	       ----------                   |______|                               |______|
+
+
+
+
+ 
+
+
+
+

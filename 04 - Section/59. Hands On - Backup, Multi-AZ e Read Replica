@@ -1,0 +1,15 @@
+AWS Database
+
+
+Backup, Multi-AZ e Read Replica
+
+Dentro dos serviços RDS da amazon existe dois tipos disponível de Backup, sendo eles:
+
+	1 - Automated: Esse serviço de backup é ativado durante a criação de uma RDS é pode ser definido para um período de 1 à 35. Uma das vantagens desse serviço e com relação ao momento realização do backup, pois você definir exatamente qual é periodo que deseja do backup, assim como os segundos também, ou seja, você definir o período de backup do dia 15 as 00h00m00s até dia 20 às 23h59m59s. Essa configuração de backup não possuí custo adicionar, pois eles são armazenados em um bucket S3.
+
+	2 - DB Snapshot: Esse é um serviço manual de de backup do database, podendo assim ser realizado na medida da necessidade.
+
+
+Um ponto importante com relação ao read reaplica para os bancos RDS da amazon é a necessidade da ativação automated backup nas instância de banco de dados, ou seja, não é possível ativar um banco com read replica se o aumated backup estiver desabilitado.
+
+Qualquer modificação no banco de dados pode impactar diretamente o desenpenho do banco de dados, até mesmo impactar indisponibilizar o banco de dados.

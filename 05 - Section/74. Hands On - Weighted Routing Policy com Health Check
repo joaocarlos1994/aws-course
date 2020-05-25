@@ -1,0 +1,26 @@
+Route 53
+
+Weighted Routing Policy com Health Check
+
+Básicamente utilizamos a criação do Weighted Routing Policy que foi criado anteriormente e criamos uma regra de Health Check para cada servidor com base no ip.
+
+Para criar a o health devemos definir qual o DNS de domínio sem o "http" ou "https" e sem "/" no final, após isso devemos colocar o ip do servidor desejado assim como o PATH (endpoint) para a realzação do Health Check.
+
+Após a criação da regra de Health Check devemos associala ao record set desejado, para assim ele fazer as validações necessária para verificar se o servidore está plenamente disponível, assim como a indisponibilização do mesmo.
+
+	                                    ________                               ________
+		--------                    |      |				   |      |
+		|      |    Encaminha para  |ROUTE |  Encaminha p/ Servidores      | EC2  |
+		|      |  ----------------> | 53   | --------------------------->  |      |
+		|______|                    |      |                               |      | 
+	       /        \                   |      |				   |      |
+	       ----------                   |______|                               |______|
+
+
+
+
+ 
+
+
+
+

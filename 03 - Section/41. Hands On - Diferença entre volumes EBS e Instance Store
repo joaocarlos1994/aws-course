@@ -1,0 +1,28 @@
+Amazon EC2
+
+Diferença entre volumes EBS e Instance Store.
+
+	Elatic Block Storage:
+		- Muito rápido para boot load;
+		- É possível adicionar mais volumes;
+		- Todos os dados são salvados
+		- Tem a possibilidade de start, stop e terminate do volume.
+
+	Instance Storage
+		- Não possuí volume de persistência;
+		- Não é possível adicionar novos volumes;
+		- Não é possível relizar o stop e hibernação da máquina;
+
+
+Instance Storage é um volume antigo criado pela Amazon Web Services, onde não é possível realizar a escrita de dados. Toda imagem que usa essse tipo de volume não grava nenhum tipo de dados, como também a instância criada por esse volume não vai ter a possibilidade de realizar o stop e hibernação desse volume.
+
+
+
+
+
+
+ 
+
+
+
+

@@ -1,0 +1,25 @@
+Cloudformation
+
+Criando um Servidor EC2 com CloudFormation
+
+Nesse capítulo vamos criar um máquina EC2 usando um código marcação YAML, para isso precisamos criar uma uma Stack dentro do Cloudformation com alguna paramêtros específico incluindo o nome da stakc e o script YAML desejado, nesse exemplo vamos usar o seguinte script:
+
+
+							---
+							Resources:
+							  #Nome de recurso a ser criado
+							  WebServers:
+							    #O tipo de recurso a ser criado, onde devemos sempre separar com "::"
+							    Type: AWS::EC2::Instance
+							    Properties:
+							      AvailabilityZone: us-east-2a
+							      ImageId: ami-02bcbb802e03574ba
+							      InstanceType: t2.micro
+
+
+
+No script acima apenas definimos que está um recurso chamado WebSevers e nesse recurso vai conter uma instância EC2 na availability zone de Ohio. Após essa stack criada é possível realizar sua edição de do Amazon viewer.
+
+
+
+

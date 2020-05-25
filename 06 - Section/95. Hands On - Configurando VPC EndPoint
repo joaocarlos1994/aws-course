@@ -1,0 +1,27 @@
+VPC
+
+Configurando VPC EndPoint
+
+VPC EndPoint é um serviço usado e disponibilizado pela Amazon para realizar o acesso seus serviços sem a necessidade de realizar acesso a internet para isso, ou seja, basicamente ele cria um túnel de conexão entre a usa VPC e o serviços da Amazon, existe hoje dois tipos de Endpoint que pode ser descrito abaixo:
+
+	- AWS PrivateLink: Uma interface de rede elástica com um endereço IP privado do intervalo de endereços IP da sua sub-rede que serve 		como um ponto de entrada para o tráfego destinado a um serviço compatível. Os endpoints de interface são desenvolvidos pelo AWS 	PrivateLink, uma tecnologia que permite que você acesse serviços de forma privada usando endereços IP privados.
+
+
+	- Endpoints de gateway: É um gateway especificado como destino para uma rota da tabela de rotas para tráfego destinado a um serviço 		compatível da AWS. Os seguintes serviços da AWS são compatíveis:
+
+		- Amazon S3
+
+		- DynamoDB
+
+Por exemplo podemos usar o EndPoint para acessar um Bucket S3, para isso precisamos criar um EndPoint para acesso ao Bucket S3 usando o service name S3 Gateway, após isso precisamos relacionar a subnet desejada assim como o tipo de acesso desse canal. Para mostrar os bucket criado podemos executar o seguinte comando:
+
+						aws s3 ls --region us-west-2
+
+
+
+
+
+
+
+
+

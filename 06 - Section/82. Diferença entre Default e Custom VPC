@@ -1,0 +1,52 @@
+VPC
+
+Diferença entre Default e Custom VPC
+
+Default VPC é o que usamos até agora para criação de máquinas EC2, Bucket e demais seriços da Amazon, enquanto o Custom VPC possibilita a criação de regras customizadas, como criação de subnet e crição de ip de customizados.
+
+O Default VPC existe por um conjunto de necessidades, como:
+
+	- Sua configuração é amigável;
+	- Tem a configuração inicial de IP private;
+	- Tem a configuração inicial de IP público;
+	- Tem a acesso a internet já configurado;
+
+
+No Custom VPC foi criado para uma necessidade específica de configuração customizada, onde o Default VPC não disponibiliza esta flexibilidade, por exemplo, nessa rede devemos configurar alguns dos seguintes itens:
+
+	- Configurar o IP Private;
+	- Configurar o Route;
+	- Configurar o IP Público;
+	- Configurar a subnet
+
+
+Também existe o VPC PEERING (Vizinhos) que permite você conectar dois VPC ou mais. Por exemplo você tem o VPC 1 com uma subnet com 3 servidores, e tem o VPC 2 com mais 3 subnet, usando o VPC PEERING é possível conectar as VPC 1 e VPC 2, assim como as subnet criadas.
+
+Um outro ponto interessante sobre VPC é possibilidade de sincronização de duas contas AWS diferente em uma grande VPC, por exemplo em caso de uma empresa comprando a outra é possível realizar essa configuração entre as duas VPC para realizar a migração.
+
+Porém dentro VPC não é possível realizar a conexão com VPC terceiras, por exemplo temos o peering entre três VPC, onde a VPC 1 acessa o VPC 2 e o VPC 3, porém o VPC 1 não consegue acessar diretamente o VPC 3, para isso seria necessário realizar o PEERING entre o VPC 1 e o VPC 3, conforme o desenho abaixo:
+
+	- VPC 1 ----> VPC 2
+	- VPC 2 ----> VPC 3
+	- VPC 1 ----> VPC 2 ----> VPC 3 
+	- VPC 1 ----> VPC 2 ----> VPC 3
+		  |           |
+		  -------------
+	  NÃO É POSSÍVEL O ACESSO DIRETO
+
+
+Dentro do VPC também existe uma limitação onde o máximo de conexeções que ela suporta é quatro VPC, por exemplo:
+
+							  VPC 1		
+							   |	
+						VPC 4 -- VPC 0 -- VPC 2
+							   |
+							  VPC 3
+
+
+Dentro do VPC é possível criar ACL para realizar controle do trafêgo de rede entre subnet porque ele é statefull, onde existe uma diferença entre os Security Group que é stateless, por exemplo no uso do ACL ou você pode permetir e bloquear, já no Security você sempre permite e o restante é tudo bloqueado, por exemplo:
+
+	
+
+
+

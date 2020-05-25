@@ -1,0 +1,18 @@
+Route 53
+
+Configurando a Topologia com 3 Servidores Web
+
+
+Nessa aula foi configurado três servidores linux em diferentes localizações, o primeiro servidor deve estár geologicamente próximo a sua localização, o segundo servidor deve estár relativamente próximo a sua localização e o último deve estar distante geologicamente.
+
+Na próxima capítulo iremos realizar as associações dos três servidores em específico com o domínio que foi criado.
+
+
+
+
+
+ 
+
+
+
+

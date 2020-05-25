@@ -1,0 +1,16 @@
+Amazon EC2
+
+AutoScaling para EC2
+
+O AutoScaling é um serviço disponilizado pela amazon para realizar a disponibilizaçao de mais máquinas em momentos de picos de uso de CPU e memória, assim como também é possível configurar o autoscaling para decrementar o número de instâncias no momentos idle.
+
+Por exemplo, podemos configurar para subir novas instâncias EC2 quando atingir um pico de 70%, 80% de CPU e assim habilitar a criação de um nova instância EC2 para distribuir esse trâfego e desafogar as máquinas restantes.
+
+Também é possível fazer o inverso, podendo assim subtrair o número de instâncias ativa de acordo com o seu uso, ou seja, no caso de haver três instâncias ativas com menos de 50% de uso é possível decrimentar o número para duas instâncias ativas, diminuindo assim o custo pago pelas as infraestruturas.
+
+
+IMPORTANTE: PARA CERTIFICAÇÃO AWS É IMPORTANTE ENTENDER TOTALMENTE O CONCEITO DE AUTOSCALING, ASSIM COMO A LEITURA OBRIGATÓRIA DA DOCUMENTAÇÃO.
+
+
+
+

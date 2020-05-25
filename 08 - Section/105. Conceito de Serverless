@@ -1,0 +1,12 @@
+Serverless Lambda
+
+Conceito de Serverless
+
+
+Serverless é a arquitetura nativa da nuvem que permite transferir mais das suas responsabilidades operacionais à cloud, aumentando a agilidade e a inovação. A arquitetura sem servidor permite criar e executar aplicativos e serviços sem preocupações com servidores. Ela elimina as tarefas de gerenciamento de infraestrutura, como provisionamento de servidores ou de clusters, loadbalances, patches, manutenção do sistema operacional e provisionamento de capacidade. Você pode criar servidores para praticamente qualquer tipo de aplicativo ou serviço de back-end, e cuidaremos de tudo o que for necessário para executar e escalar aplicativos com alta disponibilidade.
+
+
+A computação sem servidor (ou sem servidor, para abreviar) é um modelo de execução em que o provedor de nuvem (AWS, Azure ou Google Cloud) é responsável por executar um trecho de código, alocando dinamicamente os recursos. E cobrando apenas pela quantidade de recursos usados para executar o código. O código geralmente é executado em contêineres sem estado que podem ser acionados por uma variedade de eventos, incluindo solicitações HTTP, eventos de banco de dados, serviços de enfileiramento, alertas de monitoramento, uploads de arquivos, eventos agendados (tarefas cron), etc. O código enviado à nuvem O provedor para execução geralmente está na forma de uma função. Portanto, sem servidor é algumas vezes chamado de "Funções como serviço" ou "FaaS".
+
+
+A arquitetura serverless permite que você crie aplicativos modernos com maior agilidade e menor custo total de propriedade. A criação de aplicativos sem servidor significa que os desenvolvedores podem se concentrar no principal produto, sem se preocupar com o gerenciamento e a operação de servidores nem tempos de execução, seja na nuvem ou no ambiente local. Essa sobrecarga reduzida permite que os desenvolvedores recuperem o tempo e a energia que podem ser gastos no desenvolvimento de excelentes produtos com escala e confiáveis.

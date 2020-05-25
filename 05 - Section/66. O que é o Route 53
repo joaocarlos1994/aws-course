@@ -1,0 +1,19 @@
+Route 53
+
+Route 53 é um serviço da Amazon para DNS (Domain Name Server).Ele é responsável por resolver enderamento IP, por exemplo se você tem um endereço como https://www.amazon.com por tras tem um enderecamento de DNS para fazer a resolução dessa rota.
+
+Um ponto positivo de usar a Route53 é com relação ao registro de domínio onde esse domínio será replicado por todas as availaibility zone toda infraestrutura, ou seja, não é necessário ficar resolvendo DNS em caso do domínio ser registrado nos EUA e o acesso ter sido realizado no Brasil, o que garante a disponibilidade de SLA de 100%.
+
+Outros pontos importantes dentro de Route53 é com relação ao failover onde você pode habilitar o geolocalização para buscar dados das geográficos das pessoas que estão acessando o seu site; assim outro ponto importante dentro do Route53 é com relação ao failover onde é possível configurar por regra DNS o direcionamento de fluxo para um máquina em específico em caso de indisponibilidade.
+
+
+
+
+
+
+
+ 
+
+
+
+

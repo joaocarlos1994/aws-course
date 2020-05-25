@@ -1,0 +1,24 @@
+Serverless Lambda
+
+Introducao ao Lambda
+
+O AWS Lambda permite que você execute código sem provisionar ou gerenciar servidores. Você paga apenas pelo tempo de computação consumido.
+
+Com o Lambda, você pode executar o código para praticamente qualquer tipo de aplicativo ou serviço de backend, tudo sem precisar de administração. Basta carregar o código e o Lambda se encarrega de todos os itens necessários para executar e alterar a escala do código com alta disponibilidade. Você pode configurar o seu código para que ele seja acionado automaticamente por meio de outros serviços da AWS ou chamá-lo diretamente usando qualquer aplicativo móvel ou da web.
+
+Benefícios:
+	
+	- NÃO HÁ SERVIDORES PARA SEREM GERENCIADOS: O AWS Lambda executa automaticamente o seu código sem exigir que você provisione ou 	gerencie servidores. Basta escrever o código e carregá-lo no Lambda.
+
+	- ESCALABILIDADE CONTÍNUA: O AWS Lambda escala automaticamente os aplicativos executando código em resposta a cada acionamento. O 		código é executado em paralelo e processa cada acionamento individualmente, escalando precisamente de acordo com o tamanho da carga de 		trabalho.
+
+	- MEDIDOR DE FRAÇÃO DE SEGUNDO: Com o AWS Lambda, você é cobrado a cada 100 ms de execução do código e pelo número de vezes que o 		código é acionado. Você paga apenas pelo tempo de computação consumido. 
+
+	- DESEMPENHO CONSISTENTE: Com o AWS Lambda, você pode otimizar o tempo de execução do seu código escolhendo o tamanho de memória ideal 		para a sua função. Você também pode habilitar a Simultaneidade provisionada para manter suas funções inicializadas e prontas para 		responder em questão de poucos milissegundos.
+
+
+
+
+
+
+
