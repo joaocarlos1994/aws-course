@@ -1,0 +1,34 @@
+Cloudformation
+
+A linguagem YAML
+
+
+YAML é um formato de serialização (codificação de dados) de dados legíveis por humanos inspirado em linguagens como XML, C, Python, Perl, assim como o formato de correio eletrônico especificado pela RFC 2822. YAML é um acrónimo recursivo que significa "YAML Ain't Markup Language" (em português, "YAML não é linguagem de marcação"). 
+
+Básicamente temos três pontos importantes nesse linguagem de marcação:
+
+	- KEY, VALUE: É uma linguaguem de marcação baseado em Key e Value, por exemplo:
+
+			apiVersion: '2018-10-01'
+
+	- Nested Object: Pode ser relacionado a um conjunto de Key e Value caracterizando assim um objeto, por exemplo:
+
+			version: v1.1.0
+			steps:
+			  # Nested YAML collection syntax
+			  - push:
+			    - $Registry/hello-world:$ID
+			    - $Registry/hello-world:latest	
+
+
+	- Arrays: Os membros das listas são encabeçados por um traço ( - ) nos títulos e com um membro em cada linha, ou entre colchetes 		( [ ] ) e separados por uma vígula e espaço (,   ). Por exemplo:
+
+		      environmentVariables:
+		      - name: string
+			value: string
+			secureValue: strin				
+
+
+
+
+
